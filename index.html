@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <nav>
+
+        </nav>
+
+        <header>
+            <div class="header_text-box">
+                <h1 class='heading-primary'>
+                    <span class="heading-primary-main">Corey Wademan</span>
+                    <span class="heading-primary-sub">Front End Developer</span>
+                </h1>
+
+                <div class="header_button-box">
+                    <a href='#projects' class='btn btn-white btn-animated smooth-goto'>Projects</a>
+                    <a href='#work' class='btn btn-white btn-animated smooth-goto'>Work</a>
+                    <a class="btn btn-white btn-animated smooth-goto">Resume</a>
+                    <a class="btn btn-white btn-animated smooth-goto">Github</a>
+                    <a class="btn btn-white btn-animated smooth-goto">LinkedIn</a>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <section class="skills"></section>
+            <section id='projects' class="projects"></section>
+            <section id='work' class="past-work"></section>
+        </main>
+        <footer></footer>
+    </body>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        $('.smooth-goto').on('click', function () {
+                $('html, body').animate({
+                    scrollTop: $(this.hash).offset().top + 50
+                }, 1000);
+            });
+
+        $(document).ready(function(){
+            $('.popup__img').css('visibility', 'visible');        
+        })
+    </script>
+
+</html>
