@@ -11,6 +11,8 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     </head>
     <body>
         <nav>
@@ -30,30 +32,39 @@
                     <a class="btn btn-white btn-animated smooth-goto">Resume</a>
                     <a class="btn btn-white btn-animated smooth-goto">Github</a>
                     <a class="btn btn-white btn-animated smooth-goto">LinkedIn</a>
+                    <a class="btn btn-white btn-animated smooth-goto">About Me</a>
                 </div>
             </div>
         </header>
 
         <main>
-            <section class="skills"></section>
+            <section class="skills">
+                <h2 class='heading-secondary'>Front End Focused<br>With Full-Stack Experience</h2>
+                <div class="skills-row">
+                    <div class='column-1-2'>
+                        <h3>One Detail About Me</h3>
+                        <p>Some content describing the detail.</p>
+
+                        <br>
+
+                        <h3>Second Detail About Me</h3>
+                        <p>More content that is taking the place of real content just filling space...</p>
+                    </div>
+                    <div class='column-1-2'>
+                        <div class="icon-stack">
+                            <img data-icon="logos-javascript" data-inline="false" alt="js" class="iconify icon-photo icon-photo-js">
+                            <img class="iconify icon-photo icon-photo-react" alt='react' data-icon="cib-react" data-inline="false">                        
+                            <img data-icon="icomoon-free:html-five" data-inline="false" alt="html" class="iconify icon-photo icon-photo-html">
+                            <img data-icon="bx-bxl-css3" data-inline="false" alt="css" class="iconify icon-photo icon-photo-css">
+                            <img data-icon="bi-bootstrap" data-inline="false" alt="bootstrap" class="iconify icon-photo icon-photo-boot">
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section id='projects' class="projects"></section>
             <section id='work' class="past-work"></section>
         </main>
         <footer></footer>
     </body>
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-
-    <script>
-        $('.smooth-goto').on('click', function () {
-                $('html, body').animate({
-                    scrollTop: $(this.hash).offset().top + 50
-                }, 1000);
-            });
-
-        $(document).ready(function(){
-            $('.popup__img').css('visibility', 'visible');        
-        })
-    </script>
-
+    <script src="/index.js"></script>
 </html>
