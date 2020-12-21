@@ -6,7 +6,7 @@
 }
 html {
     font-size: 62.5%;
-    background-color: powderblue;
+    background-color: rgb(219, 219, 219);
 }
 @media (max-width: 75em) {
   html {
@@ -59,7 +59,6 @@ body {
     font-weight: 400;
     font-size: 1.6rem;
     line-height: 1.7;
-    color: #777;
     margin: 8px;
     box-sizing: border-box;
     padding: 1.6rem;
@@ -164,6 +163,12 @@ header {
 }
 
 /*--Skills--*/
+.skills { 
+  background-color: paleturquoise;
+  padding: 20rem 0;
+  margin-top: -25vh;
+  margin-bottom: 10vh;
+}
 .skills-row {
   display: flex;
   flex-direction: row;
@@ -223,7 +228,6 @@ header {
   background-repeat: no-repeat;
   transform: skewY(-4deg);
   margin-top: 5rem;
-  z-index: 2;
 }
 .heading-projects {
   text-align: center;
@@ -241,17 +245,8 @@ header {
   position: relative;
   height: 41rem;
   width: 25%;
-  }
-  .card-image {
-  background-size: cover;
-  background-position: center;
-  height: 12rem;
-  width: 100%;
-  background-blend-mode: screen;
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
-  }
-  .card-side {
+}
+.card-side {
   color: #fff;
   font-size: 2rem;
   height: 30rem;
@@ -263,47 +258,73 @@ header {
   border-radius: 3px;
   overflow: hidden;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
-  }
-  .card-heading {
-  font-size: 1.7rem;
+}
+/*--Front Of Card--*/
+.card-heading {
+  font-size: 2.2rem;
   font-weight: 400;
   text-transform: uppercase;
-  text-align: right;
+  text-align: center;
   color: rgb(255, 255, 255);
-  justify-self: end;
-  align-content: flex-start;
-  line-height: 3.5rem;
+  line-height: 3rem;
   margin: 0;
-  }
-  .card-details {
-    padding: 1rem 3rem;
-    color: darkslategrey;
-  }
-  .card-details ul {
-    list-style: none;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    padding: 0;
-  }
-  .card-details li {
-    text-align: center;
-    font-size: 1.5rem;
-    padding: 0.5rem;
-  }
-  .card-details li:not(:last-child) {
-    border-bottom: 1px solid rgba(66, 66, 66, 0.562);
-  }
-  
+}
+.card-heading-1 { background-image: linear-gradient(to bottom right, rgba(0, 128, 38, 0.685), rgb(9, 114, 0));}
+.card-heading-2 { background-image: linear-gradient(to bottom right, rgba(128, 15, 0, 0.795), rgb(222, 226, 2));}
+.card-heading-3 { background-image: linear-gradient(to bottom right, rgba(218, 218, 218, 0.685), rgb(147, 196, 224));}
+.card-heading-4 { background-image: linear-gradient(to bottom right, rgba(45, 169, 241, 0.685), rgb(134, 202, 241));}
+.card-heading-5 { background-image: linear-gradient(to bottom right, rgba(48, 48, 48, 0.685), rgb(31, 31, 31));}
+
+.card-image {
+  background-size: cover;
+  background-position: center;
+  height: 12rem;
+  width: 100%;
+  background-blend-mode: screen;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+}
+.card-image-1 { 
+  background-image: url(/photos/spotify-card-bg.jpg);
+  background-position: bottom; }
+.card-image-2 { background-image: url(/photos/wildfire-card-bg.jpg);}
+.card-image-3 { background-image: url(/photos/restaurant-card-bg.jpg);}
+.card-image-4 { background-image: url(/photos/ecommerce-card-bg.png);}
+.card-image-5 { background-image: url(/photos/surfboardcalculator-card-bg.jpg);}
+.card-details {
+  padding: 1rem 3rem;
+  color: darkslategrey;
+}
+
+.card-details ul {
+  list-style: none;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+}
+.card-details li {
+  text-align: center;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+}
+.card-details li:not(:last-child) {
+  border-bottom: 1px solid rgba(66, 66, 66, 0.562);
+}
+
 .card-side-front {
   background-color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .card:hover .card-side-front {
   transform: rotateY(-180deg); 
 }
+
+/*--Back of Card--*/
+
 .card-side-back {
   transform: rotateY(180deg);
   position: absolute;
@@ -323,21 +344,6 @@ header {
   background-image: linear-gradient(to right bottom, #6b330e, #978f1c); }
 .card--back-5 {
   background-image: linear-gradient(to right bottom, #396b2a, #1b2e21); }
-.card-image-1 { 
-  background-image: url(/photos/spotify-card-bg.jpg);
-  background-position: bottom;
-}
-.card-image-2 { 
-  background-image: url(/photos/wildfire-card-bg.jpg);
-}
-.card-image-3 { 
-  background-image: url(/photos/restaurant-card-bg.jpg);
-}
-.card-image-4 { 
-  background-image: url(/photos/ecommerce-card-bg.png);
-}
-.card-image-5 { 
-  background-image: url(/photos/surfboardcalculator-card-bg.jpg);
-}
+
 
 
