@@ -4,22 +4,23 @@
   padding: 0;
   box-sizing: inherit;
 }
+
 html {
     font-size: 62.5%;
     background-color: rgb(219, 219, 219);
 }
-@media (max-width: 75em) {
-  html {
-    font-size: 56.25%; }
-}
-@media (max-width: 56.25em) {
+@media (max-width: 900px) {
   html {
     font-size: 50%;
   }
   body {
     padding: 0; } 
 }
-@media (min-width: 112.5em) {
+@media (max-width: 1200px) {
+  html {
+    font-size: 56.25%; }
+}
+@media (min-width: 1800px) {
   html {
     font-size: 75%;
   } 
@@ -85,6 +86,20 @@ header {
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.header_button-box {
+  margin-bottom: 10rem;
+}
+    @media (max-width: 600px) {
+      .header_button-box {
+        margin-bottom: 20rem;
+      }
+    }
+    @media (max-width: 445px) {
+      .header_button-box {
+        margin-bottom: 30rem;
+      }
+    }
+
 .heading-primary {
   color: #fff;
   text-transform: uppercase;
@@ -99,6 +114,11 @@ header {
   letter-spacing: 0.6rem;
   animation: leftIn 0.75s ease-out;
 }
+    @media (max-width: 475px) {
+      .heading-primary-main {
+        font-size: 2.5rem;
+      }
+    }
 .heading-primary-sub {
   display: block;
   font-size: 2.2rem;
@@ -106,6 +126,11 @@ header {
   letter-spacing: 0.3rem;
   animation: rightIn 0.75s ease-out;
 }
+    @media (max-width: 475px) {
+      .heading-primary-sub {
+        font-size: 2rem;
+      }
+    }
 .btn:link, .btn:visited {
   transition: all .2s;
 }
@@ -117,6 +142,7 @@ header {
 .btn-white {
   background-color: #fff;
   font-weight: 500;
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
   color: rgb(36, 36, 36);
   padding: .8rem 2rem;
   margin: 1rem 1rem;
@@ -135,6 +161,12 @@ header {
   -webkit-transition-property: transform;
   transition-property: transform;
 }
+    @media (max-width: 475px) {
+      .btn-white {
+        font-size: 1.2rem;
+        margin: .5rem .5rem;
+      }
+    }
 .btn-white:before {
   pointer-events: none;
   position: absolute;
@@ -164,10 +196,11 @@ header {
 
 /*--Skills--*/
 .skills { 
-  background-color: paleturquoise;
+  background-color: powderblue;
   padding: 20rem 0;
   margin-top: -25vh;
-  margin-bottom: 10vh;
+  border-radius: 30px;
+  box-shadow: 0 3px 10px grey;
 }
 .skills-row {
   display: flex;
@@ -217,17 +250,24 @@ header {
     color: rgb(102, 1, 102);
   }
 
+/*---Bottom Section---*/
+
+.bottom-section {
+  border-radius: 30px;
+  background-color: powderblue;
+  margin-top: 6rem;
+  box-shadow: 0 -12px 12px grey;
+}
 /*--Features--*/
 
 .features {
   background-image: url(/photos/underwater-tube2.jpg);
-  background-size: cover;
   background-position: center;
-  height: 95vh;
+  height: 80vh;
   background-attachment: fixed;
   background-repeat: no-repeat;
-  transform: skewY(-4deg);
-  margin-top: 5rem;
+  overflow: hidden;
+  width: 100%;
 }
 .heading-projects {
   text-align: center;
@@ -257,7 +297,7 @@ header {
   backface-visibility: hidden;
   border-radius: 3px;
   overflow: hidden;
-  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.363);
 }
 /*--Front Of Card--*/
 .card-heading {
@@ -269,11 +309,16 @@ header {
   line-height: 3rem;
   margin: 0;
 }
-.card-heading-1 { background-image: linear-gradient(to bottom right, rgba(0, 128, 38, 0.685), rgb(9, 114, 0));}
-.card-heading-2 { background-image: linear-gradient(to bottom right, rgba(128, 15, 0, 0.795), rgb(222, 226, 2));}
-.card-heading-3 { background-image: linear-gradient(to bottom right, rgba(218, 218, 218, 0.685), rgb(147, 196, 224));}
-.card-heading-4 { background-image: linear-gradient(to bottom right, rgba(45, 169, 241, 0.685), rgb(134, 202, 241));}
-.card-heading-5 { background-image: linear-gradient(to bottom right, rgba(48, 48, 48, 0.685), rgb(31, 31, 31));}
+.card-heading-1 { 
+  background-image: linear-gradient(to bottom right, rgba(0, 128, 38, 0.685), rgb(9, 114, 0));}
+.card-heading-2 { 
+  background-image: linear-gradient(to bottom right, rgba(128, 15, 0, 0.795), rgb(222, 226, 2));}
+.card-heading-3 { 
+  background-image: linear-gradient(to bottom right, rgba(218, 218, 218, 0.685), rgb(147, 196, 224));}
+.card-heading-4 { 
+  background-image: linear-gradient(to bottom right, rgba(45, 169, 241, 0.685), rgb(134, 202, 241));}
+.card-heading-5 { 
+  background-image: linear-gradient(to bottom right, rgba(48, 48, 48, 0.685), rgb(31, 31, 31));}
 
 .card-image {
   background-size: cover;
@@ -334,16 +379,44 @@ header {
 .card:hover .card-side-back {
   transform: rotateY(0deg); 
 }
+.card-btn {
+  display: inline-block;
+  background-color: #fff;
+  font-weight: 500;
+  color: rgb(36, 36, 36);
+  padding: .8rem 2rem;
+  margin: 1rem 1rem;
+  font-size: 1.4rem;
+
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 3px rgba(0, 0, 0, 0);
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-property: box-shadow, transform;
+  transition-property: box-shadow, transform;
+}
+.card-btn:hover, .card-btn:focus, .card-btn:active {
+  box-shadow: 0 10px 10px -10px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
 .card-back-1 {
-  background-image: linear-gradient(to right bottom, #eca026, rgba(185, 19, 19, 0.911)); }
+  background-image: linear-gradient(to bottom right, #008026af, #097200);
+}
 .card-back-2 {
-  background-image: linear-gradient(to right bottom, #9c1283, #aa2b15); }
-.card--back-3 {
-  background-image: linear-gradient(to right bottom, #44b2e6, #05044d); }
-.card--back-4 {
-  background-image: linear-gradient(to right bottom, #6b330e, #978f1c); }
-.card--back-5 {
-  background-image: linear-gradient(to right bottom, #396b2a, #1b2e21); }
+  background-image: linear-gradient(to bottom right, #ffee00c7, #da0000c7);
+}
+.card-back-3 {
+  background-image: linear-gradient(to bottom right, #44b2e6, #115e81); 
+}
+.card-back-4 {
+  background-image: linear-gradient(to bottom right, #86caf1, #178fbe);
+}
+.card-back-5 {
+  background-image: linear-gradient(to bottom right, #303030af, #1f1f1f);;
+}
 
 
 
