@@ -376,18 +376,31 @@ header {
   display: flex;
   flex-direction: column;
 }
+.card-cta {
+  display: flex;
+  flex-direction: column;
+}
+.card-text-box {
+  font-size: 2rem;
+  color: #222;
+  margin: 1rem;
+}
 .card:hover .card-side-back {
   transform: rotateY(0deg); 
 }
 .card-btn {
   display: inline-block;
+  justify-content: center;
   background-color: #fff;
   font-weight: 500;
+  text-align: center;
+  width:fit-content;
   color: rgb(36, 36, 36);
   padding: .8rem 2rem;
   margin: 1rem 1rem;
   font-size: 1.4rem;
-
+  text-transform: uppercase;
+  text-decoration: none;
   vertical-align: middle;
   -webkit-transform: perspective(1px) translateZ(0);
   transform: perspective(1px) translateZ(0);
@@ -402,6 +415,12 @@ header {
   -webkit-transform: scale(1.1);
   transform: scale(1.1);
 }
+.card-btn-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 .card-back-1 {
   background-image: linear-gradient(to bottom right, #008026af, #097200);
 }
@@ -415,7 +434,7 @@ header {
   background-image: linear-gradient(to bottom right, #86caf1, #178fbe);
 }
 .card-back-5 {
-  background-image: linear-gradient(to bottom right, #303030af, #1f1f1f);;
+  background-image: linear-gradient(to bottom right, #696868af, #9c9c9c);;
 }
 
 
