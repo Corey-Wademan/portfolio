@@ -11,6 +11,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Jura:wght@700&family=Montserrat&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     </head>
@@ -27,11 +28,11 @@
                 </h1>
 
                 <div class="header_button-box">
-                    <a href='#projects' target="blank" class='btn btn-white btn-animated smooth-goto'>Projects</a>
-                    <a href='#work' target="blank" class='btn btn-white btn-animated smooth-goto'>Work</a>
+                    <a href='#projects' class='btn btn-white btn-animated smooth-goto'>Projects</a>
+                    <a href='#work' class='btn btn-white btn-animated smooth-goto'>Work</a>
                     <a class="btn btn-white btn-animated smooth-goto">Resume</a>
-                    <a href="" target="blank" class="btn btn-white btn-animated smooth-goto" >Github</a>
-                    <a href="" target="blank" class="btn btn-white btn-animated smooth-goto">LinkedIn</a>
+                    <a href="https://github.com/Corey-Wademan" target="blank" class="btn btn-white btn-animated smooth-goto" >Github</a>
+                    <a href="https://www.linkedin.com/in/corey-wademan-3b7512177/" target="blank" class="btn btn-white btn-animated smooth-goto">LinkedIn</a>
                     <a class="btn btn-white btn-animated smooth-goto">About Me</a>
                 </div>
             </div>
@@ -57,6 +58,7 @@
                             <img data-icon="icomoon-free:html-five" data-inline="false" alt="html" class="iconify icon-photo icon-photo-html">
                             <img data-icon="icomoon-free:css3" data-inline="false" alt="css" class="iconify icon-photo icon-photo-css">
                             <img data-icon="bi-bootstrap" data-inline="false" alt="bootstrap" class="iconify icon-photo icon-photo-boot">
+                            <img class="iconify icon-photo" data-icon="logos:material-ui" data-inline="false">
                         </div>
                     </div>
                 </div>
@@ -67,7 +69,7 @@
 
                 </section>
                 <section id='projects' class="projects">
-                    <h2 class="heading-projects">Project Portfolio</h2>
+                    <h2 class="bottom-section-headings">Project Portfolio</h2>
                     <!--1st Row-->
                     <div class="projects-row">
                         <div class="card">
@@ -208,7 +210,7 @@
                                     </p>
                                     <div class="card-btn-box">
                                         <a 
-                                            href="https://cw-ecommerce-project.netlify.app/cart"
+                                            href="https://cw-ecommerce-project.netlify.app/"
                                             class="card-btn"
                                             target="blank"  
                                         >Demo</a>
@@ -241,7 +243,7 @@
                             <div class="card-side card-side-back card-back-5">
                                 <div class="card-cta">
                                     <p class="card-text-box">
-                                        Small app for calculating reccomended surfboard volumes depending on different variables
+                                        Small app for calculating recommended surfboard volumes depending on different variables
                                     </p>
                                     <div class="card-btn-box">
                                         <a 
@@ -260,9 +262,24 @@
                         </div>
                     </div>
                 </section>
-                <section id='work' class="past-work"></section>
+                <section id='work' class="past-work">
+                    <h2 class="bottom-section-headings">Work</h2>
+                </section>
             </div>
         <footer></footer>
+
+        <!--POP UPS-->
+        <div id='popup1' class="popup">
+            <div class="popup-content">
+
+            </div>
+        </div>
+        <div id="popup2" class="popup">
+            <div class="popup-content">
+
+            </div>
+        </div>
+
     </body>
     <script src="/index.js"></script>
 </html>
