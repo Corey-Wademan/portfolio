@@ -66,7 +66,7 @@ body {
   border-image-source: url(https://www.clipartmax.com/png/middle/61-611293_border-design-related-keywords-suggestions-page-border-design.png) 25% repeat;
 }
 
-/*--Header--*/
+/*----------------Header-------------------*/
 
 header {
   background-image: url(./photos/underwater-tube1.jpg);
@@ -269,7 +269,7 @@ header {
     }
   }
 
-/*---Bottom Section---*/
+/*--------------Bottom Section----------------*/
 
 .bottom-section {
   border-radius: 30px;
@@ -291,9 +291,11 @@ header {
 .bottom-section-headings {
   text-align: center;
   margin: 5rem 0;
+  font-size: 3rem;
 }
 
-/*--Projects--*/
+/*----------Projects----------------*/
+
 .projects-row {
   display: flex;
   flex-direction: row;
@@ -321,8 +323,10 @@ header {
   overflow: hidden;
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.363);
 }
-/*--Front Of Card--*/
+
+/*------------Front Of Card----------------*/
 .card-heading {
+
   font-size: 2.2rem;
   font-weight: 400;
   text-transform: uppercase;
@@ -390,7 +394,7 @@ header {
   transform: rotateY(-180deg); 
 }
 
-/*--Back of Card--*/
+/*----------Back of Card--------------*/
 
 .card-side-back {
   transform: rotateY(180deg);
@@ -508,7 +512,90 @@ header {
     width: 80%;
   }
 }
-/*-----WORK-----*/
-.past-work {
-  margin-top: 15rem;
+
+/*--------------WORK--------------*/
+
+.work {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.work-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.work-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 70%;
+  background-color: rgba(255, 255, 255, 0.8);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 3px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform .3s;
+  border-radius: 15px;
+}
+.work-card:hover {
+  transform: translateY(-1.5rem) scale(1.03);
+}
+  .work-card h3 {
+    font-size: 2.3rem;
+    margin-bottom: 4rem;
+  }
+.work-card-image {
+  height: auto;
+  max-width: 90%;
+}
+.popup-btn {
+  margin: 2rem;
+  background-color: #115e81;
+  padding: 8px;
+  border-radius: 10px;
+  color: #fff;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*--------------POP UPS ----------------*/
+.popup {
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 9999;
+  opacity: 0;
+  visibility: hidden;
+  transition: all .3s;
+}
+.popup-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  background-color: #fff;
+  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+  border-radius: 3px;
+  display: table;
+  visibility: hidden;
+  overflow: hidden;
+  opacity: 0;
+  transform: translate(-50%, -50%) scale(0.25);
+  transition: all .4s .1s;
+}
+.popup-left {
+  width: 70%;
+  display: table-cell;
+}
+.popup-right {
+  width: 30%;
+  vertical-align: middle;
+  display: table-cell;
+  padding: 1rem 3rem;
 }
