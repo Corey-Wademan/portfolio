@@ -65,6 +65,9 @@ body {
   padding: 1.6rem;
   border-image-source: url(https://www.clipartmax.com/png/middle/61-611293_border-design-related-keywords-suggestions-page-border-design.png) 25% repeat;
 }
+.iconify {
+  text-align: center;
+}
 
 /*----------------Header-------------------*/
 
@@ -561,7 +564,8 @@ header {
 }
 
 /*--------------POP UPS ----------------*/
-.popup {
+#popup-checkpoint {
+  display: none;
   height: 100vh;
   width: 100%;
   position: fixed;
@@ -582,12 +586,20 @@ header {
   background-color: #fff;
   box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
   border-radius: 3px;
-  display: table;
-  visibility: hidden;
+  display: none;
   overflow: hidden;
+  z-index: 9999;
   opacity: 0;
   transform: translate(-50%, -50%) scale(0.25);
   transition: all .4s .1s;
+}
+#popup-checkpoint.active {
+  visibility: visible;
+  display: block;
+}
+.popup-content.active {
+  visibility: visible;
+  display: table;
 }
 .popup-left {
   width: 70%;
