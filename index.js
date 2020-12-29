@@ -5,16 +5,19 @@ $('.smooth-goto').on('click', function () {
     }, 1700);
 });
 
+// Popup Functionality
+$(".popup-btn").on("click", function() {
+    $(".popup-overlay, .popup-content").addClass("active");
+  });
+  
+  $(".close-btn, .popup-overlay").on("click", function() {
+    $(".popup-overlay, .popup-content").removeClass("active");
+  });
 
 
 $(document).ready(function(){
     $('.popup__img').css('visibility', 'visible');
     
-    $('.popup-show').on('click', function () {
-        $('#popup-checkpoint', '.popup-content').addClass('active');
-    });
-    $('.close-btn').on('click', function () {
-        $('#popup-checkpoint', '.popup-content').removeClass('active');
-    });
+    
 })
 

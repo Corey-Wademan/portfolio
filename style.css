@@ -67,6 +67,7 @@ body {
 }
 .iconify {
   text-align: center;
+  vertical-align: middle;
 }
 
 /*----------------Header-------------------*/
@@ -562,52 +563,77 @@ header {
   text-decoration: none;
   cursor: pointer;
 }
+  .popup-btn:hover {
+    background-color: #3d98c2;
+  }
 
 /*--------------POP UPS ----------------*/
-#popup-checkpoint {
-  display: none;
-  height: 100vh;
-  width: 100%;
+
+.popup-overlay {
+  /*Hides pop-up when there is no "active" class*/
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   position: fixed;
   top: 0;
   left: 0;
   background-color: rgba(0, 0, 0, 0.8);
-  z-index: 9999;
-  opacity: 0;
-  visibility: hidden;
-  transition: all .3s;
+  border: 3px solid #666666;
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
 }
+
+.popup-overlay.active {
+  /*displays pop-up when "active" class is present*/
+  visibility: visible;
+  text-align: center;
+}
+
 .popup-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 90%;
+  /*Hides pop-up content when there is no "active" class */
+  visibility: hidden;
   background-color: #fff;
-  box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
-  border-radius: 3px;
-  display: none;
-  overflow: hidden;
-  z-index: 9999;
-  opacity: 0;
-  transform: translate(-50%, -50%) scale(0.25);
-  transition: all .4s .1s;
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  width: 90%;
+  height: 60vh;
+  border-radius: 10px;
 }
-#popup-checkpoint.active {
-  visibility: visible;
-  display: block;
-}
+  @media (max-width: 425px) {
+    .popup-content {
+      flex-direction: column;
+    }
+  }
+
 .popup-content.active {
+  /*Shows pop-up content when "active" class is present */
   visibility: visible;
-  display: table;
+  
 }
 .popup-left {
   width: 70%;
-  display: table-cell;
+  overflow: hidden;
 }
+  .popup-image {
+    display: block;
+    visibility: hidden;
+    width: 100%;
+  }
 .popup-right {
+  display: flex;
+  flex-direction: column;
   width: 30%;
-  vertical-align: middle;
-  display: table-cell;
-  padding: 1rem 3rem;
 }
+  .close-btn {
+    position: absolute;
+    top: 0;
+    right: 1%;
+    cursor: pointer;
+  }
+  .close-btn:hover {
+    color: rgba(185, 19, 19, 0.911);
+  }
