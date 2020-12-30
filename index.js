@@ -8,16 +8,34 @@ $('.smooth-goto').on('click', function () {
 // Popup Functionality
 $(".popup-btn").on("click", function() {
     $(".popup-overlay, .popup-content").addClass("active");
-  });
-  
-  $(".close-btn, .popup-overlay").on("click", function() {
+});
+
+$(".close-btn, .popup-overlay").on("click", function() {
     $(".popup-overlay, .popup-content").removeClass("active");
-  });
+});
 
 
-$(document).ready(function(){
-    $('.popup__img').css('visibility', 'visible');
-    
-    
-})
+
+// Scroll-To-Top Btn
+var btn = $('.scroll-top');
+
+$(window).scroll(function() {
+  if ($(window).scrollTop() > 700) {
+    btn.addClass('show');
+  } else {
+    btn.removeClass('show');
+  }
+});
+
+btn.on('click', function(e) {
+  e.preventDefault();
+  $('html, body').animate({scrollTop:0}, 'slow');
+});
+
+
+
+
+
+
+
 
