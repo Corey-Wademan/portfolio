@@ -25,7 +25,7 @@ $( window ).on( "load", function() {
   $(".popup-resume-content, .popup-resume-overlay").addClass("active");
   });
 
-  $(".close-btn-resume, .popup-resume-overlay").on("click", function() {
+  $(".close-btn-resume").on("click", function() {
   $(".popup-resume-content, .popup-resume-overlay").removeClass("active");
   });
 
@@ -36,7 +36,7 @@ $( window ).on( "load", function() {
   $(".popup-about-content, .popup-about-overlay").addClass("active");
   });
 
-  $(".close-btn, .popup-about-overlay").on("click", function() {
+  $(".close-btn-about").on("click", function() {
   $(".popup-about-content, .popup-about-overlay").removeClass("active");
   });
 
