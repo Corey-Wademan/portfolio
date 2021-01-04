@@ -74,9 +74,10 @@ body {
   vertical-align: middle;
 }
 .scroll-top {
+  color: rgb(255, 166, 0);
   display: inline-block;
-  width: 50px;
-  height: 50px;
+  width: 4.5rem;
+  height: 4.5rem;
   text-align: center;
   border-radius: 4px;
   position: fixed;
@@ -99,7 +100,8 @@ body {
 }
 .scroll-top:hover {
   cursor: pointer;
-  background-color: rgba(0, 0, 0, 0.432);
+  color: white;
+  background-color: rgba(0, 0, 0, 0.301);
 }
 .scroll-top:active {
   background-color: #555;
@@ -193,7 +195,7 @@ header {
   margin: 1rem 1rem;
   display: inline-block;
   border-radius: 10rem;
-  font-size: 1.4rem;
+  font-size: 1.7rem;
   text-transform: uppercase;
   text-decoration: none;
   vertical-align: middle;
@@ -205,6 +207,7 @@ header {
   transition-duration: 0.3s;
   -webkit-transition-property: transform;
   transition-property: transform;
+  cursor: pointer;
 }
     @media (max-width: 475px) {
       .btn-white {
@@ -222,8 +225,8 @@ header {
   height: 10px;
   width: 90%;
   opacity: 0;
-  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 80%);
-  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.85) 0%, rgba(0, 0, 0, 0) 80%);
+  background: -webkit-radial-gradient(center, ellipse, rgba(0, 0, 0, 0.555) 0%, rgba(0, 0, 0, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(0, 0, 0, 0.555) 0%, rgba(0, 0, 0, 0) 80%);
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
   -webkit-transition-property: transform, opacity;
@@ -259,6 +262,11 @@ header {
 .heading-secondary {
   text-align: center;
   font-size: 3rem;
+  font-family: 'jura', sans-serif;
+  background: -webkit-linear-gradient( #00a08b, #0000ff);
+  transition: all .2s;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 .column-1-2 {
   display: flex;
@@ -267,6 +275,12 @@ header {
   flex-direction: column;
   margin: 0 1rem;
   width: auto;
+}
+.column-1-2 h3 {
+  font-size: 1.5em;
+}
+.column-1-2 p {
+  font-size: 1.3em;
 }
 .icon-stack {
   display: flex;
@@ -336,6 +350,13 @@ header {
   text-align: center;
   margin: 5rem 0;
   font-size: 3rem;
+  font-family: 'jura', sans-serif;
+  background: -webkit-linear-gradient( #00a08b, #0000ff);
+  transition: all .2s;
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+  color: transparent;
+  letter-spacing: 2px;
 }
   @media (max-width: 768px) {
     .bottom-section-headings {
@@ -461,6 +482,7 @@ header {
   font-size: 2rem;
   color: #222;
   margin: 1rem;
+  font-weight: 700;
 }
   @media (max-width: 860px) {
     .card-text-box {
@@ -617,6 +639,14 @@ header {
 
 /*--------------POP UPS ----------------*/
 
+iframe {
+  height: 90vh;
+  width: 95vw;
+  overflow: scroll;
+  
+}
+
+/*--WORK--*/
 .popup-overlay {
   /*Hides pop-up when there is no "active" class*/
   visibility: hidden;
@@ -654,7 +684,8 @@ header {
 .popup-content.active {
   /*Shows pop-up content when "active" class is present */
   visibility: visible;
-  height: 60vh;
+  height: 70vh;
+  background-color: #222;
 }
 .popup-left {
   width: 70%;
@@ -662,51 +693,139 @@ header {
 }
   .popup-image {
     display: block;
-    width: 100%;
-    height: 100%;
+    box-sizing: content-box;
+    width: 95%;
+    height: 95%;
+    padding: 1rem;
   }
 .popup-right {
   display: flex;
   flex-direction: column;
+  align-self: center;
   width: 30%;
+  color: white;
+  line-height: initial;
 }
+.popup-right > * {
+  margin: 8px;
+}
+  @media (max-width: 1024) {
+    .popup-right > * {
+      margin: 0 auto;
+    }
+  }
   .close-btn {
     position: absolute;
     top: 0;
-    right: 1%;
+    right: 0;
     cursor: pointer;
-    color: black;
+    color: white;
     font-size: 3rem;
   }
   .close-btn:hover {
     color: rgba(185, 19, 19, 0.911);
   }
 
-/*--POP UP Media Queries--*/
+  @media (max-width: 1024px) {
+    .popup-content.active {
+      flex-direction: column;
+      height: 92vh;
+    }
+    .popup-left {
+      width: 100%;
+    }
+    .popup-right {
+      width: 100%;
+      height: 30%;
+      font-size: 0.8em;
+      line-height: 0.6;
+      justify-content: space-evenly;
+    }
+    .popup-right h3, h5, a {
+      margin: 0;
+    }
+    .popup-btn {
+      margin: 0;
+      position: static;
+      bottom: 0;
+    }
+  }
+  @media (max-width: 425px) {
+    .popup-content {
+      flex-direction: column;
+    }
+  }
 
-@media (max-width: 1024px) {
-  .popup-content.active {
-    flex-direction: column;
-    height: 80vh;
-  }
-  .popup-left {
-    width: 100%;
-  }
-  .popup-right {
-    width: 100%;
-    height: 30%;
-  }
-  .popup-right h3, h5, a {
-    margin: 0;
-  }
-  .popup-btn {
-    margin: 0;
-    position: static;
-    bottom: 0;
-  }
+/*--RESUME--*/
+
+.popup-resume-content {
+
 }
-@media (max-width: 425px) {
-  .popup-content {
-    flex-direction: column;
-  }
+.popup-resume-content.active {
+  visibility: visible;
+}
+.popup-resume-overlay {
+  /*Hides pop-up when there is no "active" class*/
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 3px solid #666666;
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
+}
+
+.popup-resume-overlay.active {
+  /*displays pop-up when "active" class is present*/
+  visibility: visible;
+  text-align: center;
+}
+.close-btn-resume {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  cursor: pointer;
+  color: rgba(255, 1, 1, 0.911);
+  padding: 0;
+  font-size: 4rem;
+}
+.close-btn-resume:hover {
+  color: rgb(185, 19, 19);
+}
+
+/*--About Me Popup --*/
+
+.popup-about-content {
+
+}
+.popup-about-content.active {
+  visibility: visible;
+}
+.popup-about-overlay {
+  /*Hides pop-up when there is no "active" class*/
+  visibility: hidden;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  border: 3px solid #666666;
+  width: 100%;
+  height: 100vh;
+  z-index: 5;
+}
+
+.popup-about-overlay.active {
+  /*displays pop-up when "active" class is present*/
+  visibility: visible;
+  text-align: center;
 }
