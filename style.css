@@ -880,12 +880,15 @@ iframe {
     display: flex;
     flex-direction: row;
     list-style: none;
-    color: #03afff;
     justify-content: space-evenly;
     font-size: 2em;
     cursor: pointer;
   }
-  .network-icons li:hover {
+  .network-icons a {
+    color: rgb(44, 38, 131);
+  }
+  .network-icons a:hover {
+    color: #03afff;
     transform: scale(1.4);
   }
 .about-column-right { 
