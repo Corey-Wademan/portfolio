@@ -12,32 +12,38 @@ $( window ).on( "load", function() {
 
   $(".popup-btn").on("click", function() {
     $(".popup-overlay, .popup-content").addClass("active");
+    $('.scroll-top').css('display', 'none');
   });
 
   $(".close-btn").on("click", function() {
     $(".popup-overlay, .popup-content").removeClass("active");
+    $('.scroll-top').css('display', 'inline-block');
   });
 
 
   // Resume Popup
 
   $(".popup-btn-resume").on("click", function() {
-  $(".popup-resume-content, .popup-resume-overlay").addClass("active");
+    $(".popup-resume-content, .popup-resume-overlay").addClass("active");
+    $('.scroll-top').css('display', 'none');
   });
 
   $(".close-btn-resume").on("click", function() {
-  $(".popup-resume-content, .popup-resume-overlay").removeClass("active");
+    $(".popup-resume-content, .popup-resume-overlay").removeClass("active");
+    $('.scroll-top').css('display', 'inline-block');
   });
 
 
   // About Popup
 
   $(".popup-btn-about").on("click", function() {
-  $(".popup-about-content, .popup-about-overlay").addClass("active");
+    $(".popup-about-content, .popup-about-overlay").addClass("active");
+    $('.scroll-top').css('display', 'none');
   });
 
   $(".close-btn-about").on("click", function() {
-  $(".popup-about-content, .popup-about-overlay").removeClass("active");
+    $(".popup-about-content, .popup-about-overlay").removeClass("active");
+    $('.scroll-top').css('display', 'inline-block');
   });
 
 
