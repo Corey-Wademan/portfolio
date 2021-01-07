@@ -110,7 +110,7 @@ body {
   visibility: visible;
 }
 
-/*----------------Header-------------------*/
+                                                    /*----------------Header-------------------*/
 
 header {
   background-image: url(./photos/underwater-tube1.jpg);
@@ -241,7 +241,7 @@ header {
   transform: translateY(-5px);
 }
 
-/*--Skills--*/
+                                                          /*-----------Skills------------*/
 .skills { 
   background-color: powderblue;
   padding: 20rem 0;
@@ -325,25 +325,13 @@ header {
     }
   }
 
-/*--------------Bottom Section----------------*/
+                                                  /*--------------Bottom Section----------------*/
 
 .bottom-section {
   border-radius: 30px;
   background-color: powderblue;
   margin-top: 6rem;
   box-shadow: 0 -12px 12px grey;
-}
-  
-/*--Features--*/
-
-.features {
-  background-image: url(/photos/underwater-tube2.jpg);
-  background-position: center;
-  height: 80vh;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  width: 100%;
 }
 .bottom-section-headings {
   text-align: center;
@@ -362,9 +350,78 @@ header {
       margin: 10rem 0;
     }
   }
-    
+  
+                                                  /*---------------Features-----------*/
 
-/*----------Projects----------------*/
+.features {
+  background-image: url(/photos/tahiti-underwater.jpg);
+  background-position: center;
+  height: 100vh;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+  width: 100%;
+}
+.feature-row {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100%;
+}
+.features-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgba(255, 255, 255, 0.6);
+  font-size: 1.5rem;
+  padding: 2.5rem;
+  text-align: center;
+  border-radius: 20px;
+  box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
+  transition: transform .3s;
+  width: calc((60% - 3 * 5rem) / 3);
+  height: 50%
+}
+.features-card:hover {
+  transform: translateY(-2.5rem) scale(1.03);
+}
+  .features-icon {
+    font-size: 5rem;
+    margin-bottom: 0.5rem;
+    background-clip: text;
+    -webkit-background-clip: text;
+    text-align: center;
+    color: black;
+  }
+  
+  .features-card ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    font-weight: 700;
+  }
+  @media (max-width:768px) {
+    .feature-row {
+      flex-direction: column;
+    }
+    .features-card {
+      height: 20%;
+      width: 40%;
+
+    }
+    .features-card h3 {
+    margin: 0;
+    }
+    .features-icon {
+      display: none;
+    }
+
+  }
+  
+                                                    /*----------Projects----------------*/
 
 .projects-row {
   display: flex;
@@ -394,7 +451,7 @@ header {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.363);
 }
 
-/*------------Front Of Card----------------*/
+                                              /*------------Front Of Card----------------*/
 .card-heading {
 
   font-size: 2.2rem;
@@ -464,7 +521,7 @@ header {
   transform: rotateY(-180deg); 
 }
 
-/*----------Back of Card--------------*/
+                                                          /*----------Back of Card--------------*/
 
 .card-side-back {
   transform: rotateY(180deg);
@@ -500,6 +557,7 @@ header {
   width:fit-content;
   color: rgb(36, 36, 36);
   padding: .8rem 2rem;
+  border-radius: 20px;
   margin: 1rem 1rem;
   font-size: 1.4rem;
   text-transform: uppercase;
@@ -584,7 +642,7 @@ header {
   }
 }
 
-/*--------------WORK--------------*/
+                                                              /*--------------WORK--------------*/
 
 .work {
   display: flex;
@@ -624,10 +682,10 @@ header {
   border-radius: 5px;
 }
 .popup-btn {
-  margin: 2rem;
+  margin: 10px;
   background-color: #115e81;
-  padding: 8px;
-  border-radius: 10px;
+  padding: 13px;
+  border-radius: 8px;
   color: #fff;
   text-decoration: none;
   cursor: pointer;
@@ -635,6 +693,34 @@ header {
   .popup-btn:hover {
     background-color: #3d98c2;
   }
+
+                                                                          /*-----Love It Section------*/
+.love-it {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+  .love-it h1 {
+    font-size: 6vw;
+    margin-right: 5rem;
+  }
+  .love-it a {
+    font-size: 4vw;
+    border-radius: 25px;
+    border: #115e81 2px solid;
+    padding: 8px;
+  }
+  .love-it a:hover {
+    background-color: #115e81;
+    color: white;
+    cursor: pointer;
+  }
+
+
+
+
 
 /*--------------POP UPS ----------------*/
 
@@ -744,7 +830,6 @@ iframe {
       margin: 0;
     }
     .popup-btn {
-      margin: 0;
       position: static;
       bottom: 0;
     }
