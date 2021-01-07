@@ -140,12 +140,12 @@ header {
     }
     @media (max-width: 445px) {
       .header_button-box {
-        margin-bottom: 30rem;
+        margin-bottom: 15rem;
       }
     }
 
 .heading-primary {
-  color: #fff;
+  color: rgba(0, 0, 0, 0.85);
   text-transform: uppercase;
   margin-bottom: 2.5rem;
   display: inline-block;
@@ -161,7 +161,7 @@ header {
 }
     @media (max-width: 475px) {
       .heading-primary-main {
-        font-size: 2.5rem;
+        font-size: 3.5rem;
       }
     }
 .heading-primary-sub {
@@ -174,7 +174,7 @@ header {
 }
     @media (max-width: 475px) {
       .heading-primary-sub {
-        font-size: 2rem;
+        font-size: 3rem;
       }
     }
 .btn:link, .btn:visited {
@@ -260,26 +260,31 @@ header {
   }
 .heading-secondary {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.3em;
   font-family: 'jura', sans-serif;
   background: -webkit-linear-gradient( #00a08b, #0000ff);
   transition: all .2s;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
+.heading-secondary-icon {
+  font-size: 1.3em;
+}
+.excerpt {
+  font-size: 1.8em;
+  line-height: 1.5em;
+  text-align: left;
+}
 .column-1-2 {
   display: flex;
   text-align: center;
   align-content: center;
   flex-direction: column;
-  margin: 0 1rem;
-  width: auto;
+  margin: 0 4rem;
+  width: 50%;
 }
 .column-1-2 h3 {
   font-size: 1.5em;
-}
-.column-1-2 p {
-  font-size: 1.3em;
 }
 .icon-stack {
   display: flex;
@@ -318,6 +323,15 @@ header {
     .icon-photo {
       height: 10rem;
     }
+    .heading-secondary {
+      font-size: 2em;
+    }
+    .excerpt {
+      font-size: 1.7em;
+    }
+    .column-1-2 {
+      width: auto;
+    }
   }
   @media (max-width: 475px ) {
     .icon-photo {
@@ -336,7 +350,7 @@ header {
 .bottom-section-headings {
   text-align: center;
   margin: 5rem 0;
-  font-size: 3rem;
+  font-size: 2.5em;
   font-family: 'jura', sans-serif;
   background: -webkit-linear-gradient( #00a08b, #0000ff);
   transition: all .2s;
@@ -689,12 +703,13 @@ header {
   color: #fff;
   text-decoration: none;
   cursor: pointer;
+  
 }
   .popup-btn:hover {
     background-color: #3d98c2;
   }
 
-                                                                          /*-----Love It Section------*/
+                                                      /*-----Love It Section------*/
 .love-it {
   display: flex;
   flex-direction: row;
@@ -709,8 +724,10 @@ header {
   .love-it a {
     font-size: 4vw;
     border-radius: 25px;
-    border: #115e81 2px solid;
+    color: #115e81;
+    border: #095d85 2px solid;
     padding: 8px;
+    text-decoration: none;
   }
   .love-it a:hover {
     background-color: #115e81;
@@ -722,7 +739,7 @@ header {
 
 
 
-/*--------------POP UPS ----------------*/
+                                                            /*--------------POP UPS ----------------*/
 
 iframe {
   height: 90vh;
@@ -731,7 +748,7 @@ iframe {
   
 }
 
-/*--WORK--*/
+                                                                          /*--WORK--*/
 .popup-overlay {
   /*Hides pop-up when there is no "active" class*/
   visibility: hidden;
@@ -769,31 +786,57 @@ iframe {
 .popup-content.active {
   /*Shows pop-up content when "active" class is present */
   visibility: visible;
-  height: 70vh;
-  background-color: #222;
+  height: 95vh;
+  width: 90vw;
+  background-color: rgb(43, 40, 40);
 }
 .popup-left {
-  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
   overflow: hidden;
 }
   .popup-image {
     display: block;
     box-sizing: content-box;
-    width: 95%;
+    width: 98%;
     height: 95%;
     padding: 1rem;
   }
 .popup-right {
   display: flex;
   flex-direction: column;
-  align-self: center;
+  align-items: center;
   width: 30%;
+  height: 100%;
+  font-family: 'Jura';
   color: white;
-  line-height: initial;
+  margin: auto;
 }
-.popup-right > * {
-  margin: 8px;
+.popup-right h5 {
+  font-size: 1.6rem;
 }
+  .popup-right p {
+    font-size: 1.6rem;
+    text-align: left;
+    font-family: 'Montserrat';
+  }
+  .popup-checkpoint-btn {
+    margin: 10px;
+    background-color: #115e81;
+    padding: 13px;
+    border-radius: 8px;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    position: absolute;
+    bottom: 0;
+    width: 20rem;
+  }
+  .popup-checkpoint-btn:hover {
+    background-color: #3d98c2
+  }
   @media (max-width: 1024) {
     .popup-right > * {
       margin: 0 auto;
@@ -801,8 +844,8 @@ iframe {
   }
   .close-btn {
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 1%;
+    right: 1%;
     cursor: pointer;
     color: white;
     font-size: 3rem;
@@ -821,26 +864,33 @@ iframe {
     }
     .popup-right {
       width: 100%;
-      height: 30%;
+      height: auto;
       font-size: 0.8em;
-      line-height: 0.6;
       justify-content: space-evenly;
     }
     .popup-right h3, h5, a {
       margin: 0;
     }
-    .popup-btn {
-      position: static;
+    .popup-right p {
+      font-size: 1.4rem;
+      margin-bottom: 65px;
+    }
+    .popup-checkpoint-btn {
+      position: absolute;
       bottom: 0;
+      width: 90%;
     }
   }
   @media (max-width: 425px) {
     .popup-content {
       flex-direction: column;
     }
+    .close-btn {
+      font-size: 2rem;
+    }
   }
 
-/*--RESUME--*/
+                                                                      /*--RESUME--*/
 
 .popup-resume-content {
 
