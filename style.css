@@ -794,14 +794,15 @@ iframe {
   display: flex;
   flex-direction: column;
   align-items: center;
+  align-self: center;
   width: 80%;
   overflow: hidden;
 }
   .popup-image {
     display: block;
     box-sizing: content-box;
-    width: 98%;
-    height: 95%;
+    width: 90%;
+    height: 70%;
     padding: 1rem;
   }
 .popup-right {
@@ -861,6 +862,10 @@ iframe {
     }
     .popup-left {
       width: 100%;
+    }
+    .popup-image {
+      width: 95%;
+      height: 97%;
     }
     .popup-right {
       width: 100%;
