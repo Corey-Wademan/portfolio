@@ -123,6 +123,11 @@ header {
   clip-path: polygon(0 0, 100% 0, 100% 80vh, 0 100%);
   z-index:2 ;
 }
+  @media (max-width: 1024px) {
+    header {
+      background-attachment: unset;
+    }
+  }
 .header_text-box {
   text-align: center;
   position: absolute;
@@ -376,6 +381,11 @@ header {
   background-size: cover;
   overflow: hidden;
   width: 100%;
+}
+@media (max-width: 1024px) {
+  .features {
+    background-attachment: unset;
+  }
 }
 .feature-row {
   display: flex;
@@ -745,7 +755,6 @@ iframe {
   height: 90vh;
   width: 95vw;
   overflow: scroll;
-  
 }
 
                                                                           /*--WORK--*/
