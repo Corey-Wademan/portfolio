@@ -21,7 +21,7 @@ $( window ).on( "load", function() {
   });
 
 
-  // Resume Popup
+  /* Resume Popup **Temporary Disabled, displayed as google drive link instead**
 
   $(".popup-btn-resume").on("click", function() {
     $(".popup-resume-content, .popup-resume-overlay").addClass("active");
@@ -32,7 +32,7 @@ $( window ).on( "load", function() {
     $(".popup-resume-content, .popup-resume-overlay").removeClass("active");
     $('.scroll-top').css('display', 'inline-block');
   });
-
+*/
 
   // About Popup
 
