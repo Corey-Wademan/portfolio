@@ -34,26 +34,24 @@ $( window ).on( "load", function() {
   });
 
   // Projects Gif Popup
-  $('.gif-hover1').click(function() {
+  $('.gif-hover1, .gif-btn1').click(function() {
     $('#gif1').toggle();
-  })
+  });
 
-  $('.gif-hover2').click(function() {
+  $('.gif-hover2, .gif-btn2').click(function() {
     $('#gif2').toggle();
-  })
-
-  $('.gif-hover3').click(function() {
+  });
+  $('.gif-hover3, .gif-btn3').click(function() {
     $('#gif3').toggle();
-  })
+  });
 
-  $('.gif-hover4').click(function() {
+  $('.gif-hover4, .gif-btn4').click(function() {
     $('#gif4').toggle();
-  })
+  });
 
-  $('.gif-hover5').click(function() {
+  $('.gif-hover5, .gif-btn5').click(function() {
     $('#gif5').toggle();
-  })
-
+  });
 
   // Scroll-To-Top Btn
 
