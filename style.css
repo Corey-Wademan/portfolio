@@ -11,7 +11,7 @@
   0% {
     opacity: 0;
     transform: translateX(-5rem); }
-  80% {
+  70% {
     transform: translateX(0.5rem); }
   100% {
     opacity: 1;
@@ -21,7 +21,7 @@
   0% {
     opacity: 0;
     transform: translateX(5rem); }
-  80% {
+  70% {
     transform: translateX(-0.5rem); }
   100% {
     opacity: 1;
@@ -31,7 +31,7 @@
   0% {
     opacity: 0;
     transform: translateY(-5rem); }
-  80% {
+  70% {
     transform: translateY(0.5rem); }
   100% {
     opacity: 1;
@@ -150,7 +150,7 @@ header {
     }
 
 .heading-primary {
-  color: rgba(0, 0, 0, 0.85);
+  color: rgba(255, 255, 255, 0.85);
   text-transform: uppercase;
   margin-bottom: 2.5rem;
   display: inline-block;
@@ -162,7 +162,8 @@ header {
   font-size: 5rem;
   font-weight: 400;
   letter-spacing: 0.6rem;
-  animation: leftIn 0.75s ease-out;
+  animation: leftIn 1s ease-out;
+  text-shadow: rgb(0, 0, 0) 0px 5px 5px;
 }
     @media (max-width: 475px) {
       .heading-primary-main {
@@ -175,7 +176,8 @@ header {
   font-family: 'Bangers', cursive;
   font-weight: 400;
   letter-spacing: 0.3rem;
-  animation: rightIn 0.75s ease-out;
+  animation: rightIn 1s ease-out;
+  text-shadow: rgba(206, 206, 206, 0.85) 0px 5px 15px;
 }
     @media (max-width: 475px) {
       .heading-primary-sub {
@@ -186,7 +188,7 @@ header {
   transition: all .2s;
 }
 .btn-animated {
-  animation: bottomIn 0.75s ease-out 0.5s;
+  animation: bottomIn 1.25s ease-out 0.5s;
   animation-fill-mode: backwards;
 }
 
@@ -246,7 +248,7 @@ header {
   transform: translateY(-5px);
 }
 
-                                                          /*-----------Skills------------*/
+                                /*-----------Skills------------*/
 .skills { 
   background-color: powderblue;
   padding: 20rem 0;
@@ -344,7 +346,7 @@ header {
     }
   }
 
-                                                  /*--------------Bottom Section----------------*/
+                              /*--------------Bottom Section----------------*/
 
 .bottom-section {
   border-radius: 30px;
@@ -370,7 +372,7 @@ header {
     }
   }
   
-                                                  /*---------------Features-----------*/
+                             /*---------------Features-----------*/
 
 .features {
   background-image: url(/photos/tahiti-underwater.jpg);
@@ -445,7 +447,7 @@ header {
 
   }
   
-                                                    /*----------Projects----------------*/
+                               /*----------Projects----------------*/
 
 .projects-row {
   display: flex;
@@ -475,7 +477,7 @@ header {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.363);
 }
 
-                                              /*------------Front Of Card----------------*/
+                             /*------------Front Of Card----------------*/
 .card-heading {
 
   font-size: 2.2rem;
@@ -545,7 +547,7 @@ header {
   transform: rotateY(-180deg); 
 }
 
-                                                          /*----------Back of Card--------------*/
+                               /*----------Back of Card--------------*/
 
 .card-side-back {
   transform: rotateY(180deg);
@@ -665,8 +667,23 @@ header {
     width: 80%;
   }
 }
+                      /*------------Project Gifs---------*/
+.gif-content {
+  display: none;
+  background-color: #fff;
+  position: absolute;
+  padding: 10px;
+  
+  z-index: 4;
+}
+  .gif-content img {
+    height: 50vh;
+    width: auto;
+    padding: 10px;
+    z-index: 5;
+  }
 
-                                                              /*--------------WORK--------------*/
+                      /*--------------WORK--------------*/
 
 .work {
   display: flex;
@@ -719,7 +736,7 @@ header {
     background-color: #3d98c2;
   }
 
-                                                      /*-----Love It Section------*/
+                            /*-----Love It Section------*/
 .love-it {
   display: flex;
   flex-direction: row;
@@ -749,9 +766,9 @@ header {
 
 
 
-                                                            /*--------------POP UPS ----------------*/
+                       /*--------------POP UPS ----------------*/
 
-                                                                          /*--WORK--*/
+                                    /*--WORK--*/
 .popup-overlay {
   /*Hides pop-up when there is no "active" class*/
   visibility: hidden;
@@ -956,6 +973,7 @@ header {
     flex-direction: column;
     justify-content: center;
     height: 100%;
+    margin: 5px;
   }
   #profile img {
     box-sizing: border-box;
@@ -995,10 +1013,16 @@ header {
   flex-direction: column;
   justify-content: center;
   width: 60%;
+  margin: 5px;
 }
   .about-column-right h1 {
     text-align: left;
   }
   .about-column-right p {
     text-align: left;
+  }
+  @media (max-width: 768px){
+    .about-column-right {
+      width: 90%;
+    }
   }

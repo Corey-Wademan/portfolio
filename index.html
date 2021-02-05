@@ -7,13 +7,23 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title></title>
+        <link rel='icon' href="https://api.iconify.design/emojione-v1:person-surfing.svg" />
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
         <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Jura:wght@700&family=Montserrat&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-0Q1NBBYMRY"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-0Q1NBBYMRY');
+        </script>
+
+        <title>Corey Wademan's Web Developer Portfolio</title>
     </head>
     <body>
 
@@ -67,9 +77,10 @@
                             <ul>
                                 <li>HTML5</li>
                                 <li>CSS3 | SASS</li>
-                                <li>JavaScript</li>
+                                <li>JavaScript (ES6)</li>
                                 <li>React | Redux</li>
                                 <li>jQuery</li>
+                                <li>REST APIs</li>
                             </ul>
                         </div>
                         <div class="features-card">
@@ -92,47 +103,62 @@
                         </div>
                     </div>
                 </section>
+
+                                     <!--Project Cards-->
+
                 <section id='projects' class="projects">
-                    <h2 class="bottom-section-headings">Project Portfolio</h2>
+                    <h2 class="bottom-section-headings">Projects</h2>
                     <!--1st Row-->
                     <div class="projects-row">
+
+                        <!--Card 1-->
+
                         <div class="card">
-                            <div class="card-side card-side-front card-front-1">
-                                <div class="card-image card-image-1">
+                            <div class="card-side card-side-front card-front-3">
+                                <div class="card-image card-image-3">
                                     <h4 class="card-heading">
-                                        <span class=" card-heading-1">Spotify<br>Playlist Creator</span>
+                                        <span class=" card-heading-3">Hangry Restaurant Finder</span>
                                     </h4>
                                 </div>
                                     <img>
                                 <div class="card-details">
                                     <ul>
                                         <li>React</li>
+                                        <li>Yelp API</li>
                                         <li>Javascript</li>
-                                        <li>Spotify API</li>
-                                        <li>Heroku</li>
+                                        <li>CSS</li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="card-side card-side-back card-back-1">
+                            <div class="card-side card-side-back card-back-3">
                                 <div class="card-cta">
                                     <p class="card-text-box">
-                                        App that searches Spotify database and allows user to add songs to custom playlists
+                                        Displays a list of restaurants defined by different search querys and filter keywords accessing the Yelp API using React Class components
                                     </p>
                                     <div class="card-btn-box">
                                         <a 
-                                            href="https://jamming-playlist-creator.herokuapp.com/"
+                                            href="https://restaurant-locator.netlify.app/"
                                             class="card-btn"
-                                            target="blank" 
+                                            target="blank"  
                                         >Demo</a>
                                         <a
-                                            href="https://github.com/Corey-Wademan/Jamming-App"
+                                            href="https://github.com/Corey-Wademan/React-Yelp-App"
                                             class="card-btn"
                                             target="blank" 
                                         >Code</a>
+                                        <a class="card-btn gif-hover1">Preview</a>
+                                        
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                            <!--Gif-->
+                                <div id='gif1' class="gif-content">
+                                    <img src='photos/hangry-proj.gif'/>
+                                </div>
+
+                        <!--Card 2-->
 
                         <div class="card">
                             <div class="card-side card-side-front card-front-2">
@@ -153,7 +179,7 @@
                             <div class="card-side card-side-back card-back-2">
                                 <div class="card-cta">
                                     <p class="card-text-box">
-                                        Plots live wildfires across the globe retrieved by NASA satellite data
+                                        Plots live wildfires across the globe retrieved by NASA satellite data using React Functional Components & React Hooks 
                                     </p>
                                     <div class="card-btn-box">
                                         <a 
@@ -166,52 +192,69 @@
                                             class="card-btn"
                                             target="blank" 
                                         >Code</a>
+                                        <a class="card-btn gif-hover2">Preview</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
+                            <!--Wildfire Gif-->
+                                <div id="gif2" class="gif-content">
+                                    <img src='/photos/wildfire-proj.gif' />
+                                </div>
+
+                        <!--Card 3-->
+
                         <div class="card">
-                            <div class="card-side card-side-front card-front-3">
-                                <div class="card-image card-image-3">
+                            <div class="card-side card-side-front card-front-1">
+                                <div class="card-image card-image-1">
                                     <h4 class="card-heading">
-                                        <span class=" card-heading-3">Local Restaurant Finder</span>
+                                        <span class=" card-heading-1">Spotify<br>Playlist Creator</span>
                                     </h4>
                                 </div>
                                     <img>
                                 <div class="card-details">
                                     <ul>
                                         <li>React</li>
-                                        <li>Yelp API</li>
                                         <li>Javascript</li>
-                                        <li>CSS</li>
+                                        <li>Spotify API</li>
+                                        <li>Heroku</li>
                                     </ul>
                                 </div>
                             </div>
-                            <div class="card-side card-side-back card-back-3">
+                            <div class="card-side card-side-back card-back-1">
                                 <div class="card-cta">
                                     <p class="card-text-box">
-                                        Displays restaurants defined by different search querys accessing the Yelp API
+                                        App that uses the Spotify API & Spotify oAuth allowing the user to name / create playlists then add, delete songs to the playlist that will appear on the users Spotify account 
                                     </p>
                                     <div class="card-btn-box">
                                         <a 
-                                            href="https://ravenous-yelp-app-react.netlify.app/"
+                                            href="https://groovin-playlist-creator.herokuapp.com/"
                                             class="card-btn"
-                                            target="blank"  
+                                            target="blank" 
                                         >Demo</a>
                                         <a
-                                            href="https://github.com/Corey-Wademan/React-Yelp-App"
+                                            href="https://github.com/Corey-Wademan/Jamming-App"
                                             class="card-btn"
                                             target="blank" 
                                         >Code</a>
+                                        <a class="card-btn gif-hover3">Preview</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
+                            <!--Groovin Gif-->
+                                <div id="gif3" class="gif-content">
+                                    <img src='photos/spotify-proj.gif' />
+                                </div>
+
                     </div>
                     <!--2nd Row-->
                     <div class="projects-row">
+
+                        <!--Card 4-->
+
                         <div class="card">
                             <div class="card-side card-side-front card-front-4">
                                 <div class="card-image card-image-4">
@@ -245,10 +288,18 @@
                                             class="card-btn"
                                             target="blank" 
                                         >Code</a>
+                                        <a class="card-btn gif-hover4">Preview</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                            <!--Ecommerce Gif-->
+                                <div id="gif4" class="gif-content">
+                                    <img src="/photos/commerce-proj.gif" />
+                                </div>
+
+                        <!--Card 5-->
 
                         <div class="card">
                             <div class="card-side card-side-front card-front-5">
@@ -283,12 +334,21 @@
                                             class="card-btn"
                                             target="blank" 
                                         >Code</a>
+                                        <a class="card-btn gif-hover5">Preview</a>
                                     </div>
                                 </div>
                             </div>
                         </div>
+
+                            <!--Surfboard Gif-->
+                                <div id="gif5" class="gif-content">
+                                    <img src="/photos/surf-volume-proj.gif" />
+                                </div>
+
                     </div>
                 </section>
+
+
                 <section id='work' class="work">
                     <h2 class="bottom-section-headings">Work</h2>
                     <div class="work-content">
@@ -328,7 +388,6 @@
             </div>
         </div>
 
-
         <div class="popup-about-overlay">
             <div class="popup-about-content">
                 <div class="about-row">
@@ -341,7 +400,7 @@
                                 <h3>B.A. Political Science</h3>
                                 <h4>Ocean County College, New Jersey</h4>
                                 <h4>Flagler College, Florida</h4>
-                                <h4>Bond University, Australia</h4>
+                                <h4>Bond University, Gold Coast, QLD Australia</h4>
                             </div>
                             <div class="network-icons">
                                 <a href="mailto:cwademan6@gmail.com"><span class="iconify" data-icon="clarity:email-line" data-inline="false"></span></a>
@@ -353,15 +412,17 @@
                     <div class="about-column-right">
                         <h1>Biography</h1>
                         <p>
-                            I am a undergraduate from Flager College with a degree in International Studies and a focus in Political Science.
+                            I have two years experience in Front End Web Development alongside design expertise working as the sole designer and developer for an Alarm Systems company. Most 
                             <br><br>
                             I first became interested in coding 6 years ago when I realized there wasn't any single-program or application to find local bands and live music at establishments nearby, which is now the very popular "Events" module on Facebook. Realizing I needed much more experience than drag-and-dropping through wordpress, I took time off to finish my school studies. 
                             <br><br>
-                            Fast-forward to now, after diligent and persistent self-studies through FreeCodeCamp, Codecademy, and Udemy - I've developed a few small apps and taken a company and expanded their non-existent online presence to occupy space across multiple social media platforms alongside designing, developing, and deploying a fully responsive mobile-first website. With my help, they have increased their customer engagement by over 150%.
+                            Fast-forward, I've developed a handful of apps and taken a company and expanded their non-existent online presence to occupy space across multiple social media platforms alongside designing, developing, and deploying a fully responsive mobile-first website. With my help, they have increased their customer engagement by over 150%.
                             <br><br>
-                            My interests lie in creating beautiful front-end ecosystems with modern, dynamic user experiences.
+                            My interests lie in creating beautiful front-end ecosystems with modern, dynamic user experiences using React & JavaScript. I also have a passionate, keen eye for design and developing the user interface.
                             <br><br>
-                            My hobbies outside of coding include surfing, rock climbing, yoga, hiking, and reading.
+                            Since I began learning about the cool and interesting things you can do using the power of the web, I've been passionate ever since, striving to grow and learn to become the best developer and designer I can be. The skills in my resume and the features & projects listed here will continue to evolve and expand, so check back soon to see changes.
+                            <br><br>
+                            My hobbies outside of coding include surfing, rock climbing, guitar, hiking, yoga, and reading.
                         </p>
                     </div>
                     

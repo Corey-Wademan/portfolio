@@ -21,19 +21,6 @@ $( window ).on( "load", function() {
   });
 
 
-  /* Resume Popup **Temporary Disabled, displayed as google drive link instead**
-
-  $(".popup-btn-resume").on("click", function() {
-    $(".popup-resume-content, .popup-resume-overlay").addClass("active");
-    $('.scroll-top').css('display', 'none');
-  });
-
-  $(".close-btn-resume").on("click", function() {
-    $(".popup-resume-content, .popup-resume-overlay").removeClass("active");
-    $('.scroll-top').css('display', 'inline-block');
-  });
-*/
-
   // About Popup
 
   $(".popup-btn-about").on("click", function() {
@@ -45,6 +32,27 @@ $( window ).on( "load", function() {
     $(".popup-about-content, .popup-about-overlay").removeClass("active");
     $('.scroll-top').css('display', 'inline-block');
   });
+
+  // Projects Gif Popup
+  $('.gif-hover1').click(function() {
+    $('#gif1').toggle();
+  })
+
+  $('.gif-hover2').click(function() {
+    $('#gif2').toggle();
+  })
+
+  $('.gif-hover3').click(function() {
+    $('#gif3').toggle();
+  })
+
+  $('.gif-hover4').click(function() {
+    $('#gif4').toggle();
+  })
+
+  $('.gif-hover5').click(function() {
+    $('#gif5').toggle();
+  })
 
 
   // Scroll-To-Top Btn
