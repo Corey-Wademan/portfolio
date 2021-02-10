@@ -40,6 +40,7 @@ $( window ).on( "load", function() {
 
   $('.gif-hover2, .gif-btn2').click(function() {
     $('#gif2').toggle();
+    console.log('hi')
   });
   $('.gif-hover3, .gif-btn3').click(function() {
     $('#gif3').toggle();

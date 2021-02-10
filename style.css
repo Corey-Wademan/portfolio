@@ -50,7 +50,6 @@ body {
   margin: 8px;
   box-sizing: border-box;
   padding: 1.6rem;
-  border-image-source: url(https://www.clipartmax.com/png/middle/61-611293_border-design-related-keywords-suggestions-page-border-design.png) 25% repeat;
 }
   @media (max-width: 900px) {
     html {
@@ -110,7 +109,7 @@ body {
   visibility: visible;
 }
 
-                                                    /*----------------Header-------------------*/
+      /*----------------Header-------------------*/
 
 header {
   background-image: url(./photos/underwater-tube1.jpg);
@@ -248,7 +247,7 @@ header {
   transform: translateY(-5px);
 }
 
-                                /*-----------Skills------------*/
+        /*-----------Skills------------*/
 .skills { 
   background-color: powderblue;
   padding: 20rem 0;
@@ -347,7 +346,7 @@ header {
     }
   }
 
-                              /*--------------Bottom Section----------------*/
+        /*--------------Bottom Section----------------*/
 
 .bottom-section {
   border-radius: 30px;
@@ -373,10 +372,10 @@ header {
     }
   }
   
-                             /*---------------Features-----------*/
+        /*---------------Features-----------*/
 
 .features {
-  background-image: url(/photos/tahiti-underwater.jpg);
+  background-image: url(/photos/skills\ gif.gif);
   background-position: center;
   height: 100vh;
   background-attachment: fixed;
@@ -448,7 +447,7 @@ header {
 
   }
   
-                               /*----------Projects----------------*/
+        /*----------Projects----------------*/
 
 .projects-row {
   display: flex;
@@ -478,7 +477,7 @@ header {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.363);
 }
 
-                             /*------------Front Of Card----------------*/
+          /*------------Front Of Card----------------*/
 .card-heading {
 
   font-size: 2.2rem;
@@ -548,7 +547,7 @@ header {
   transform: rotateY(-180deg); 
 }
 
-                               /*----------Back of Card--------------*/
+          /*----------Back of Card--------------*/
 
 .card-side-back {
   transform: rotateY(180deg);
@@ -669,7 +668,9 @@ header {
     width: 80%;
   }
 }
-                      /*------------Project Gifs---------*/
+
+             /*------------Project Gifs---------*/
+
 .gif-content {
   display: none;
   position: fixed;
@@ -680,7 +681,7 @@ header {
   border-radius: 10px;
   padding: 10px;
   z-index: 4;
-  box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+  box-shadow: rgb(0 0 0 / 56%) 0px 22px 70px 4px;
   height: auto;
   width: auto;
 }
@@ -762,7 +763,8 @@ header {
     background-color: #3d98c2;
   }
 
-                            /*-----Love It Section------*/
+           /*-----Love It Section------*/
+
 .love-it {
   display: flex;
   flex-direction: row;
@@ -794,7 +796,7 @@ header {
 
                        /*--------------POP UPS ----------------*/
 
-                                    /*--WORK--*/
+      /*--WORK--*/
 .popup-overlay {
   /*Hides pop-up when there is no "active" class*/
   visibility: hidden;
@@ -940,7 +942,8 @@ header {
       font-size: 2rem;
     }
   }
-                                                                /*--About Me Popup --*/
+
+ /*--About Me Popup --*/
 
 .close-btn-about {
   position: absolute;
