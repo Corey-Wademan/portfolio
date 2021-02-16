@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
-<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <![endif]-->
 <html>
     <head>
         <meta charset="utf-8">
@@ -27,14 +27,14 @@
     </head>
     <body>
 
-                                                                    <!--Scroll Top Btn-->
+                                                    <!--Scroll Top Btn-->
         <button class="iconify scroll-top" data-icon="cil:arrow-circle-top" data-inline="false"></button>
 
         <header>
             <div class="header_text-box">
                 <h1 class='heading-primary'>
                     <span class="heading-primary-main">Corey Wademan</span>
-                    <span class="heading-primary-sub">Front End Developer</span>
+                    <span class="heading-primary-sub">Web Developer & Design</span>
                 </h1>
 
                 <div class="header_button-box">
@@ -47,22 +47,22 @@
                 </div>
             </div>
         </header>
-                                                                <!--Intro Section-->
+                                                <!--Intro Section-->
         <main>
             <section class="skills">
-                <h2 class='heading-secondary'>Front End Focused<br>With Design <span class="iconify heading-secondary-icon"  data-icon="codicon:arrow-right" data-inline="false"></span> Development Experience</h2>
+                <h2 data-animate-in="left" class='heading-secondary'>Front End Focused<br>With Design <span class="iconify heading-secondary-icon"  data-icon="codicon:arrow-right" data-inline="false"></span> Development Experience</h2>
                 <div class="skills-row">
                     <div class='column-1-2'>
-                        <p class="excerpt"><strong>I'm Corey,</strong> and I love to <strong>design</strong> and <strong>develop</strong> the <strong>Front End experience</strong> for applications and websites. I'm commited to <strong>creating and expanding ideas</strong> into <strong>beautiful,</strong> simplistic final products.</p>
+                        <p data-animate-in="left" class="excerpt"><strong>I'm Corey,</strong> and I love to <strong>design</strong> and <strong>develop</strong> the <strong>Front End experience</strong> for applications and websites. I enjoy creating and building ideas into <strong>sleek, valuable</strong>  final products.</p>
                     </div>
                     <div class='column-1-2'>
-                        <div class="icon-stack">
+                        <div data-animate-in="fadeIn" class="icon-stack">
                             <img data-icon="logos-javascript" data-inline="false" alt="js" class="iconify icon-photo icon-photo-js">
-                            <img class="iconify icon-photo icon-photo-react" alt='react' data-icon="cib-react" data-inline="false">                        
+                            <img class="iconify icon-photo icon-photo-react" alt='react' data-icon="cib-react" data-inline="false">
+                            <img class="iconify icon-photo" data-icon="logos:nodejs-icon" data-inline="false"></img>                        
                             <img data-icon="icomoon-free:html-five" data-inline="false" alt="html" class="iconify icon-photo icon-photo-html">
                             <img data-icon="icomoon-free:css3" data-inline="false" alt="css" class="iconify icon-photo icon-photo-css">
                             <img data-icon="bi-bootstrap" data-inline="false" alt="bootstrap" class="iconify icon-photo icon-photo-boot">
-                            <img class="iconify icon-photo" data-icon="logos:material-ui" data-inline="false">
                         </div>
                     </div>
                 </div>
@@ -71,7 +71,7 @@
             <div class="bottom-section">
                 <section class='features'>
                     <div class="feature-row">
-                        <div class="features-card">
+                        <div data-animate-in="left" class="features-card">
                             <span class="iconify features-icon" data-icon="et:browser" data-inline="false"></span>
                             <h3>Front End</h3>
                             <ul>
@@ -80,19 +80,17 @@
                                 <li>JavaScript (ES6)</li>
                                 <li>React | Redux</li>
                                 <li>jQuery</li>
-                                <li>REST APIs</li>
                             </ul>
                         </div>
-                        <div class="features-card">
-                            <span class="iconify features-icon" data-icon="carbon:certificate-check" data-inline="false"></span>
-                            <h3>Testing</h3>
+                        <div data-animate-in="up" class="features-card">
+                            <span class="iconify features-icon" data-icon="clarity:rack-server-line" data-inline="false"></span>                       
+                            <h3>Server</h3>
                             <ul>
-                               <li>Chai</li>
-                               <li>Mocha</li> 
-                               <li>React Testing Library</li>
+                               <li>Node.js</li>
+                               <li>Express</li> 
                             </ul>
                         </div>
-                        <div class="features-card">
+                        <div data-animate-in="right" class="features-card">
                             <span class="iconify features-icon" data-icon="bi:cloud-upload" data-inline="false"></span>
                             <h3>Deployment</h3>
                             <ul>
@@ -107,9 +105,9 @@
                                      <!--Project Cards-->
 
                 <section id='projects' class="projects">
-                    <h2 class="bottom-section-headings">Projects</h2>
+                    <h2 data-animate-in="fadeIn" class="bottom-section-headings">Personal Projects</h2>
                     <!--1st Row-->
-                    <div class="projects-row">
+                    <div data-animate-in="up" class="projects-row">
 
                         <!--Card 1-->
 
@@ -136,7 +134,7 @@
                                         Displays a list of restaurants defined by different search querys and filter keywords accessing the Yelp API using React Class components
                                     </p>
                                     <div class="card-btn-box">
-                                        <a class="card-btn gif-hover1">Preview</a>
+                                        <a class="card-btn  gif-hover1">Preview</a>
                                         <a 
                                             href="https://restaurant-locator.netlify.app/"
                                             class="card-btn"
@@ -153,10 +151,12 @@
                         </div>
 
                             <!--Gif-->
+                            <div class="gif-backer">
                                 <div id='gif1' class="gif-content">
                                     <img src='photos/hangry-proj.gif'/>
                                     <span class="iconify gif-btn gif-btn1" data-icon="bi:x-square-fill" data-inline="false"></span>
                                 </div>
+                            </div>
 
                         <!--Card 2-->
 
@@ -253,7 +253,7 @@
 
                     </div>
                     <!--2nd Row-->
-                    <div class="projects-row">
+                    <div data-animate-in="up" class="projects-row">
 
                         <!--Card 4-->
 
@@ -354,8 +354,8 @@
 
 
                 <section id='work' class="work">
-                    <h2 class="bottom-section-headings">Work</h2>
-                    <div class="work-content">
+                    <h2 data-animate-in="fadeIn" class="bottom-section-headings">Work</h2>
+                    <div data-animate-in="fadeIn" class="work-content">
                         <div class="work-card checkpoint-card">
                             <h3>Checkpoint Alarm Systems</h3>
                             <img class="work-card-image" src="./photos/checkpoint-image.jpg">
@@ -364,15 +364,15 @@
                     </div>
                 </section>
                 <div class="love-it">
-                    <h1>Love it?</h1>
-                    <a href="mailto:cwademan6@gmail.com">Lets Talk</a>
+                    <h1 data-animate-in="left">Love it?</h1>
+                    <a data-animate-in="right" href="mailto:cwademan6@gmail.com">Lets Talk</a>
                 </div>
             </div>
         <footer>
 
         </footer>
 
-                                                                <!--POP UPS-->
+                                         <!--POP UPS-->
 
         <div class="popup-overlay">
             <span class="iconify close-btn" data-icon="bi:x-square-fill" data-inline="false"></span>

@@ -375,7 +375,7 @@ header {
         /*---------------Features-----------*/
 
 .features {
-  background-image: url(/photos/skills\ gif.gif);
+  background-image: url(/photos/Skills-gif.gif);
   background-position: center;
   height: 100vh;
   background-attachment: fixed;
@@ -412,7 +412,8 @@ header {
   height: 50%
 }
 .features-card:hover {
-  transform: translateY(-2.5rem) scale(1.03);
+  transform: translateY(-2.5rem) scale(1.03) !important;
+  transition: transform .5s ease, opacity .5s ease !important;
 }
   .features-icon {
     font-size: 5rem;
@@ -444,6 +445,9 @@ header {
     .features-icon {
       display: none;
     }
+    .features {
+      background-image: url(/photos/tahiti-underwater.jpg)
+    }
 
   }
   
@@ -461,6 +465,7 @@ header {
   height: 41rem;
   width: 25%;
   border-radius: 15px;
+  transition: 0s;
 }
   
 .card-side {
@@ -610,13 +615,13 @@ header {
   justify-content: center;
 }
 .card-back-1 {
-  background-image: linear-gradient(to bottom right, #008026, #097200);
+  background-image: linear-gradient(to bottom right, #43d126, #053d00);
 }
 .card-back-2 {
   background-image: linear-gradient(to bottom right, #ffee00, #da0000);
 }
 .card-back-3 {
-  background-image: linear-gradient(to bottom right, #44b2e6, #115e81); 
+  background-image: linear-gradient(to bottom right, #44cee6, #115e81); 
 }
 .card-back-4 {
   background-image: linear-gradient(to bottom right, #86caf1, #178fbe);
@@ -1055,4 +1060,53 @@ header {
     .about-column-right {
       width: 90%;
     }
-  }
+}
+
+/*-------------------------FADE SCROLLING ANIMATIONS------------------*/
+
+[data-animate-in] {
+opacity: 0;
+transition: transform 2s ease, opacity 0.8s ease
+}
+
+[data-animate-in="up"] {
+transform: translate3d(0, 24px, 0)
+}
+
+[data-animate-in="left"] {
+transform: translate3d(-25%, 0, 0)
+}
+
+[data-animate-in="right"] {
+transform: translate3d(25%, 0, 0)
+}
+
+[data-animate-in="down"] {
+transform: translate3d(0, -24px, 0)
+}
+
+[data-animate-in="fadeIn"] {
+transform: translate3d(0, 0, 0)
+}
+
+[data-animate-in].in-view {
+opacity: 1;
+transform: translate3d(0, 0, 0);
+-webkit-transform: translate3d(0, 0, 0);
+transition: transform 1.3s ease, opacity 1.3s ease
+}
+
+.fade-in {
+opacity: 0;
+transition: opacity 1s ease
+}
+
+.page-loaded .fade-in,.page-loaded.fade-in {
+opacity: 1
+}
+
+.isSafari.isTouch [data-animate-in],.isSafari.isTouch [data-animate-in="up"] {
+opacity: 1;
+transition: none;
+transform: none
+}
