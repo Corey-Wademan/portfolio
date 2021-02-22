@@ -164,7 +164,6 @@ $( window ).on( "load", function() {
       }, 100);
     });
   
-    $(document).ready(function() {
       setTimeout(function() {
         detection();
       }, 500);
@@ -179,7 +178,6 @@ $( window ).on( "load", function() {
         }
         el.css("transition-delay", d);
       }
-    });
   });
   // END FADE SCROLLING ANIMATIONS
 
