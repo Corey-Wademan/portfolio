@@ -11,7 +11,7 @@ $( window ).on( "load", function() {
   // Green To Clean Popup 
 
   $(".popup-btn-g2c").on("click", function() {
-    $(".popup-overlay, .popup-content").addClass("active");
+    $(".popup-g2c-overlay, .popup-g2c-content").addClass("active");
     $('.scroll-top').css('display', 'none');
   });
 
@@ -23,7 +23,7 @@ $( window ).on( "load", function() {
   // Checkpoint Popup 
 
   $(".popup-btn").on("click", function() {
-    $(".popup-g2c-overlay, .popup-g2c-content").addClass("active");
+    $(".popup-overlay, .popup-content").addClass("active");
     $('.scroll-top').css('display', 'none');
   });
 

@@ -135,14 +135,15 @@ header {
   transform: translate(-50%, -50%);
 }
 .header_button-box {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
   margin-bottom: 10rem;
+  width: 80vw;
 }
     @media (max-width: 600px) {
-      .header_button-box {
-        margin-bottom: 20rem;
-      }
-    }
-    @media (max-width: 445px) {
       .header_button-box {
         margin-bottom: 15rem;
       }
@@ -726,7 +727,6 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 3rem 0;
 }
 .work-card {
   display: flex;
@@ -741,6 +741,7 @@ header {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform .3s;
   border-radius: 15px;
+  margin: 3rem 0;
 }
 .work-card:hover {
   transform: translateY(-1.5rem) scale(1.03);
@@ -876,6 +877,7 @@ header {
     font-size: 1.6rem;
     text-align: left;
     font-family: 'Montserrat';
+    padding: 5px;
   }
   .popup-checkpoint-btn {
     margin: 10px;
@@ -904,6 +906,7 @@ header {
     cursor: pointer;
     color: white;
     font-size: 3rem;
+    z-index: 9999;
   }
   .close-btn:hover {
     color: rgba(185, 19, 19, 0.911);
