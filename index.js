@@ -8,10 +8,22 @@ $( window ).on( "load", function() {
   });
 
 
+  // Green To Clean Popup 
+
+  $(".popup-btn-g2c").on("click", function() {
+    $(".popup-overlay, .popup-content").addClass("active");
+    $('.scroll-top').css('display', 'none');
+  });
+
+  $(".close-btn-g2c").on("click", function() {
+    $(".popup-overlay, .popup-content").removeClass("active");
+    $('.scroll-top').css('display', 'inline-block');
+  });
+
   // Checkpoint Popup 
 
   $(".popup-btn").on("click", function() {
-    $(".popup-overlay, .popup-content").addClass("active");
+    $(".popup-g2c-overlay, .popup-g2c-content").addClass("active");
     $('.scroll-top').css('display', 'none');
   });
 
