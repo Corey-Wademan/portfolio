@@ -375,7 +375,7 @@ header {
         /*---------------Features-----------*/
 
 .features {
-  background-image: url(/photos/Skills-gif.gif);
+  background-image: url(/photos/tahiti-underwater.jpg);
   background-position: center;
   height: 100vh;
   background-attachment: fixed;
@@ -409,7 +409,7 @@ header {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform .3s;
   width: calc((60% - 3 * 5rem) / 3);
-  height: 50%
+  height: 40%
 }
 .features-card:hover {
   transform: translateY(-2.5rem) scale(1.03) !important;
@@ -435,9 +435,9 @@ header {
       flex-direction: column;
     }
     .features-card {
-      height: 20%;
+      height: 15%;
       width: 40%;
-
+      font-size: 1.2rem;
     }
     .features-card h3 {
     margin: 0;
@@ -726,6 +726,7 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin: 3rem 0;
 }
 .work-card {
   display: flex;
