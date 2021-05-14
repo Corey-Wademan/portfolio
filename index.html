@@ -7,7 +7,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link rel='icon' href="https://api.iconify.design/emojione-v1:person-surfing.svg" />
+        <link rel='icon' href='https://api.iconify.design/ant-design:code-twotone.svg'>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
@@ -27,14 +27,11 @@
     </head>
     <body>
 
-                                                    <!--Scroll Top Btn-->
-        <button class="iconify scroll-top" data-icon="cil:arrow-circle-top" data-inline="false"></button>
-
         <header>
             <div class="header_text-box">
                 <h1 class='heading-primary'>
                     <span class="heading-primary-main">Corey Wademan</span>
-                    <span class="heading-primary-sub">Web Developer & Designer</span>
+                    <span class="heading-primary-sub">Web Developer</span>
                 </h1>
 
                 <div class="header_button-box">
@@ -116,7 +113,60 @@
                 <section id='projects' class="projects">
                     <h2 class="bottom-section-headings">Projects</h2>
                     <!--1st Row-->
-                    <div data-animate-in="up" class="projects-row">
+                    <div class="projects-row">
+
+                        <!--Card 6 (In first position) -->
+
+                        <div class="card">
+                            <div class="card-side card-side-front card-front-6">
+                                <div class="card-image card-image-6">
+                                    <h4 class="card-heading">
+                                        <span class=" card-heading-6">Weather Forecasting App</span>
+                                    </h4>
+                                </div>
+                                    <img>
+                                <div class="card-details">
+                                    <ul>
+                                        <li>React</li>
+                                        <li>Node.js</li>
+                                        <li>Express</li>
+                                        <li>Open Weather API</li>
+                                        <li>Google Geolocation API</li>
+                                        <li>Heroku</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="card-side card-side-back card-back-6">
+                                <div class="card-cta">
+                                    <p class="card-text-box">
+                                        Web Application to fetch current and forecasted weather for a given search query. Search results are converted into lat/long points then passed to  Open Weather API where weather data is retrieved. Node/Express Proxy server handles requests and responses. Frontend UI displayed with React.
+                                    </p>
+                                   <div class="card-btn-box">
+                                        <a 
+                                            href="https://express-weather-forecasting.herokuapp.com/"
+                                            class="card-btn"
+                                            target="blank"  
+                                        >Demo</a>
+                                        <a
+                                            href="https://github.com/Corey-Wademan/weather-forecast"
+                                            class="card-btn"
+                                            target="blank" 
+                                        >Code</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--Gif-->
+                        <div class="gif-backer">
+                            <div id='gif1' class="gif-content">
+                                <video autoplay loop>
+                                    <source src="./photos/hangry-video.mp4">
+                                </video>
+                                <span class="iconify gif-btn gif-btn1" data-icon="bi:x-square-fill" data-inline="false"></span>
+                            </div>
+                        </div>
+
 
                         <!--Card 1-->
 
@@ -124,7 +174,7 @@
                             <div class="card-side card-side-front card-front-3">
                                 <div class="card-image card-image-3">
                                     <h4 class="card-heading">
-                                        <span class=" card-heading-3">Hangry Restaurant Finder</span>
+                                        <span class=" card-heading-3">Yelp Clone Restaurant Finder </span>
                                     </h4>
                                 </div>
                                     <img>
@@ -159,13 +209,15 @@
                             </div>
                         </div>
 
-                            <!--Gif-->
-                            <div class="gif-backer">
-                                <div id='gif1' class="gif-content">
-                                    <img src='photos/hangry-proj.gif'/>
-                                    <span class="iconify gif-btn gif-btn1" data-icon="bi:x-square-fill" data-inline="false"></span>
-                                </div>
+                        <!--Gif-->
+                        <div class="gif-backer">
+                            <div id='gif1' class="gif-content">
+                                <video autoplay loop>
+                                    <source src="./photos/hangry-video.mp4">
+                                </video>
+                                <span class="iconify gif-btn gif-btn1" data-icon="bi:x-square-fill" data-inline="false"></span>
                             </div>
+                        </div>
 
                         <!--Card 2-->
 
@@ -193,7 +245,7 @@
                                     <div class="card-btn-box">
                                         <a class="card-btn gif-hover2">Preview</a>
                                         <a 
-                                            href="https://wildfire-tracker-app.herokuapp.com/"
+                                            href="https://wildfiretrackingapp.netlify.app/"
                                             class="card-btn"
                                             target="blank"  
                                         >Demo</a>
@@ -206,12 +258,17 @@
                                 </div>
                             </div>
                         </div>
+                    </div>
+                    <!--2nd Row-->
+                    <div class="projects-row">
 
-                            <!--Wildfire Gif-->
-                                <div id="gif2" class="gif-content">
-                                    <img src='/photos/wildfire-proj.gif' />
-                                    <span class="iconify gif-btn gif-btn2" data-icon="bi:x-square-fill" data-inline="false"></span>
-                                </div>
+                        <!--Wildfire Gif-->
+                            <div id="gif2" class="gif-content">
+                                <video autoplay loop>
+                                    <source src="./photos/wildfire-video.mp4">
+                                </video>
+                                <span class="iconify gif-btn gif-btn2" data-icon="bi:x-square-fill" data-inline="false"></span>
+                            </div>
 
                         <!--Card 3-->
 
@@ -240,7 +297,7 @@
                                     <div class="card-btn-box">
                                         <a class="card-btn gif-hover3">Preview</a>
                                         <a 
-                                            href="https://groovin-playlist-creator.herokuapp.com/"
+                                            href="https://groovinplaylistcreator.netlify.app/"
                                             class="card-btn"
                                             target="blank" 
                                         >Demo</a>
@@ -254,15 +311,13 @@
                             </div>
                         </div>
 
-                            <!--Groovin Gif-->
-                                <div id="gif3" class="gif-content">
-                                    <img src='photos/spotify-proj.gif' />
-                                    <span class="iconify gif-btn gif-btn3" data-icon="bi:x-square-fill" data-inline="false"></span>
-                                </div>
-
-                    </div>
-                    <!--2nd Row-->
-                    <div data-animate-in="up" class="projects-row">
+                        <!--Groovin Gif-->
+                            <div id="gif3" class="gif-content">
+                                <video autoplay loop>
+                                    <source src="./photos/spotify-video.mp4">
+                                </video>
+                                <span class="iconify gif-btn gif-btn3" data-icon="bi:x-square-fill" data-inline="false"></span>
+                            </div>
 
                         <!--Card 4-->
 
@@ -305,11 +360,13 @@
                             </div>
                         </div>
 
-                            <!--Ecommerce Gif-->
-                                <div id="gif4" class="gif-content">
-                                    <img src="/photos/commerce-proj.gif" />
-                                    <span class="iconify gif-btn gif-btn4" data-icon="bi:x-square-fill" data-inline="false"></span>
-                                </div>
+                        <!--Ecommerce Gif-->
+                            <div id="gif4" class="gif-content">
+                                <video autoplay loop>
+                                    <source src="./photos/commerce-video.mp4">
+                                </video>
+                                <span class="iconify gif-btn gif-btn4" data-icon="bi:x-square-fill" data-inline="false"></span>
+                            </div>
 
                         <!--Card 5-->
 
@@ -352,12 +409,13 @@
                             </div>
                         </div>
 
-                            <!--Surfboard Gif-->
-                                <div id="gif5" class="gif-content">
-                                    <img src="/photos/surf-volume-proj.gif" />
-                                    <span class="iconify gif-btn gif-btn5" data-icon="bi:x-square-fill" data-inline="false"></span>
-                                </div>
-
+                        <!--Surfboard Gif-->
+                            <div id="gif5" class="gif-content">
+                                <video autoplay loop>
+                                    <source src="./photos/surf_volume-video.mp4">
+                                </video>
+                                <span class="iconify gif-btn gif-btn5" data-icon="bi:x-square-fill" data-inline="false"></span>
+                            </div>
                     </div>
                 </section>
 
@@ -368,18 +426,18 @@
                         <div class="work-card">
                             <h3>Green To Clean Powerwashing</h3>
                             <img class="work-card-image" src="./photos/green-to-clean-pic.JPG">
-                            <a class="popup-btn popup-btn-g2c popup-show">Learn More</a>
+                            <a class="popup-btn-g2c popup-btn popup-show">Learn More</a>
                         </div>
                         <div class="work-card checkpoint-card">
                             <h3>Checkpoint Alarm Systems</h3>
                             <img class="work-card-image" src="./photos/checkpoint-image.jpg">
-                            <a class="popup-btn popup-show">Learn More</a>
+                            <a class="popup-btn popup-btn-checkpoint popup-show">Learn More</a>
                         </div>
                     </div>
                 </section>
                 <div class="love-it">
                     <h1 data-animate-in="left">Love it?</h1>
-                    <a data-animate-in="right" href="mailto:cwademan6@gmail.com">Lets Talk</a>
+                    <a style="transition: .4s;" data-animate-in="right" href="mailto:cwademan6@gmail.com">Lets Talk</a>
                 </div>
             </div>
         <footer>
@@ -387,34 +445,38 @@
         </footer>
 
                                          <!--POP UPS-->
-        <div class="popup-overlay popup-g2c-overlay">
-            <span class="iconify close-btn" data-icon="bi:x-square-fill" data-inline="false"></span>
-                <div class="popup-content popup-g2c-content">
-                <div class="popup-left">
-                    <img class="popup-image" src="./photos/green-to-clean-gif.gif">
+        <div class="popup-g2c-overlay popup-overlay">
+            <span class="iconify close-btn g2c-close-btn" data-icon="bi:x-square-fill" data-inline="false"></span>
+                <div class="popup-g2c-content popup-content">
+                    <div class="popup-left">
+                        <video controls autoplay loop class="popup-image">
+                            <source src="./photos/green_to_clean-video.mp4">
+                        </video>
+                    </div>
+                    <div class="popup-right">
+                        <h3>Design Creation <span style="font-size: 4rem;" class="iconify" data-icon="codicon:arrow-small-right" data-inline="false"></span> Website Deployment</h3>
+                        <h5>Web Developer</h5>
+                        <p>
+                            Static website built with JavaScript & HTML/CSS. Animation and effect heavy, fully responsive, interactive photo comparison sliders & photo slide shows, 3-theme mode, scrolling animations, contact form, and FAQs accordian menu. 
+                        </p>
+                        <a class="popup-btn" target="_blank" href='http://greentocleanpowerwash.com'>Visit Site</a>
+                    </div>    
                 </div>
-                <div class="popup-right">
-                    <h3>Design Creation <span style="font-size: 4rem;" class="iconify" data-icon="codicon:arrow-small-right" data-inline="false"></span> Website Deployment</h3>
-                    <h5>Web Developer</h5>
-                    <p>
-                        Static website built with JavaScript & HTML/CSS. Animation and effect heavy, fully responsive, photo slide shows, contact form, FAQs accordian menu, and interactive photo comparison sliders. 
-                    </p>
-                    <a class="popup-btn" target="_blank" href='#'>Visit Site</a>
-                </div>    
-            </div>
         </div>
 
-        <div class="popup-overlay">
+        <div class="popup-overlay popup-checkpoint-overlay">
             <span class="iconify close-btn" data-icon="bi:x-square-fill" data-inline="false"></span>
-             <div class="popup-content">
+             <div class="popup-content popup-checkpoint-content">
                 <div class="popup-left">
-                    <img class="popup-image" src="./photos/checkpoint-gif.gif">
+                    <video controls loop class="popup-image">
+                        <source src="./photos/checkpoint-video.mp4">
+                    </video>
                 </div>
                 <div class="popup-right">
                     <h3>Design Creation <span style="font-size: 4rem;" class="iconify" data-icon="codicon:arrow-small-right" data-inline="false"></span> Website Deployment</h3>
                     <h5>Web Developer | Social Media & Marketing Manager</h5>
                     <p>
-                        Multi page static site built with JavaScript & HTML/CSS. Utilizes contact forms, scrolling animations, Flexbox & Grid,  
+                        Multi page static site built with JavaScript & HTML/CSS. Utilizes contact forms, fully responsive, scrolling animations, Flexbox & Grid, JavaScript Contact Menus.
                     </p>
                     <a class="popup-checkpoint-btn" target="_blank" href='http://checkpointalarms.com/'>Visit Site</a>
                 </div>    

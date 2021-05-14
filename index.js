@@ -1,4 +1,4 @@
-$( window ).on( "load", function() {
+$( window ).ready( function() {
 
     // Smooth scroll to section
   $('.smooth-goto').on('click', function () {
@@ -12,24 +12,20 @@ $( window ).on( "load", function() {
 
   $(".popup-btn-g2c").on("click", function() {
     $(".popup-g2c-overlay, .popup-g2c-content").addClass("active");
-    $('.scroll-top').css('display', 'none');
   });
 
-  $(".close-btn-g2c").on("click", function() {
-    $(".popup-overlay, .popup-content").removeClass("active");
-    $('.scroll-top').css('display', 'inline-block');
+  $(".g2c-close-btn").on("click", function() {
+    $(".popup-g2c-overlay, .popup-g2c-content").removeClass("active");
   });
 
   // Checkpoint Popup 
 
-  $(".popup-btn").on("click", function() {
-    $(".popup-overlay, .popup-content").addClass("active");
-    $('.scroll-top').css('display', 'none');
+  $(".popup-btn-checkpoint").on("click", function() {
+    $(".popup-checkpoint-overlay, .popup-checkpoint-content").addClass("active");
   });
 
   $(".close-btn").on("click", function() {
     $(".popup-overlay, .popup-content").removeClass("active");
-    $('.scroll-top').css('display', 'inline-block');
   });
 
 
@@ -37,12 +33,10 @@ $( window ).on( "load", function() {
 
   $(".popup-btn-about").on("click", function() {
     $(".popup-about-content, .popup-about-overlay").addClass("active");
-    $('.scroll-top').css('display', 'none');
   });
 
   $(".close-btn-about").on("click", function() {
     $(".popup-about-content, .popup-about-overlay").removeClass("active");
-    $('.scroll-top').css('display', 'inline-block');
   });
 
   // Projects Gif Popup
@@ -54,7 +48,6 @@ $( window ).on( "load", function() {
   */  
   $('.gif-hover1, .gif-btn1').click(function() {
     $('#gif1').toggle();
-    $('.scroll-top').toggle('display');
      if ( $(window).width() > 800 ) {
       $('.card, .work, .love-it').toggle('opacity')
      }
@@ -62,20 +55,17 @@ $( window ).on( "load", function() {
 
   $('.gif-hover2, .gif-btn2').click(function() {
     $('#gif2').toggle();
-    $('.scroll-top').toggle('display');
     if ( $(window).width() > 800 ) {
       $('.card, .work, .love-it').toggle('opacity')
      }  });
   $('.gif-hover3, .gif-btn3').click(function() {
     $('#gif3').toggle();
-    $('.scroll-top').toggle('display');
     if ( $(window).width() > 800 ) {
       $('.card, .work, .love-it').toggle('opacity')
      }  });
 
   $('.gif-hover4, .gif-btn4').click(function() {
     $('#gif4').toggle();
-    $('.scroll-top').toggle('display');
     if ( $(window).width() > 800 ) {
       $('.card, .work, .love-it').toggle('opacity')
      }
@@ -83,27 +73,16 @@ $( window ).on( "load", function() {
 
   $('.gif-hover5, .gif-btn5').click(function() {
     $('#gif5').toggle();
-    $('.scroll-top').toggle('display');
     if ( $(window).width() < 800 ) {
       $('.card, .work, .love-it').toggle('opacity')
-     }  });
-
-  // Scroll-To-Top Btn
-
-  var btn = $('.scroll-top');
-
-  $(window).scroll(function() {
-  if ($(window).scrollTop() > 700) {
-    btn.addClass('show');
-  } else {
-    btn.removeClass('show');
-  }
+    }
   });
-
-  btn.on('click', function(e) {
-  e.preventDefault();
-  $('html, body').animate({scrollTop:0}, 'slow');
-  });
+  
+  $('.gif-hover6, .gif-btn6').click(function() {
+    $('#gif6').toggle();
+    if ( $(window).width() < 800 ) {
+      $('.card, .work, .love-it').toggle('opacity')
+  }});
 
         // FADE IN / FADE OUT SCROLLING ANIMATIONS 
   $(function() {

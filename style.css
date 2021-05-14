@@ -40,7 +40,7 @@
 
 html {
     font-size: 62.5%;
-    background-color: rgb(219, 219, 219);
+    background-image: url('/photos/liquid.jpg');
 }
 body {
   font-family: 'Montserrat', sans-serif;
@@ -50,6 +50,17 @@ body {
   margin: 8px;
   box-sizing: border-box;
   padding: 1.6rem;
+}
+body::-webkit-scrollbar {
+  width: 1rem;
+}
+
+body::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+body::-webkit-scrollbar-thumb {
+  background: #c8d0d3;
 }
   @media (max-width: 900px) {
     html {
@@ -71,42 +82,6 @@ body {
 .iconify {
   text-align: center;
   vertical-align: middle;
-}
-.scroll-top {
-  color: rgb(255, 166, 0);
-  display: inline-block;
-  width: 4.5rem;
-  height: 4.5rem;
-  text-align: center;
-  border-radius: 4px;
-  position: fixed;
-  bottom: 30px;
-  right: 30px;
-  transition: background-color .3s, 
-    opacity .5s, visibility .5s;
-  opacity: 0;
-  visibility: hidden;
-  z-index: 1000;
-}
-.scroll-top::after {
-  content: "\f077";
-  font-family: FontAwesome;
-  font-weight: normal;
-  font-style: normal;
-  font-size: 2em;
-  line-height: 50px;
-  color: #fff;
-}
-.scroll-top:hover {
-  cursor: pointer;
-  color: white;
-}
-.scroll-top:active {
-  background-color: #555;
-}
-.scroll-top.show {
-  opacity: 1;
-  visibility: visible;
 }
 
       /*----------------Header-------------------*/
@@ -504,6 +479,8 @@ header {
   background-image: linear-gradient(to bottom right, rgba(45, 169, 241, 0.685), rgb(134, 202, 241));}
 .card-heading-5 { 
   background-image: linear-gradient(to bottom right, rgba(48, 48, 48, 0.685), rgb(31, 31, 31));}
+.card-heading-6 { 
+  background-image: linear-gradient(to bottom right, rgb(155, 127, 66), rgba(31, 31, 31, 0.5))}
 
 .card-image {
   background-size: cover;
@@ -521,6 +498,8 @@ header {
 .card-image-3 { background-image: url(/photos/restaurant-card-bg.jpg);}
 .card-image-4 { background-image: url(/photos/ecommerce-card-bg.png);}
 .card-image-5 { background-image: url(/photos/surfboardcalculator-card-bg.jpg);}
+.card-image-6 { background-image: url(/photos/weather-app-card-bg.jpg);}
+
 .card-details {
   padding: 1rem 3rem;
   color: darkslategrey;
@@ -567,8 +546,8 @@ header {
   align-self: center;
 }
 .card-text-box {
-  font-size: 2rem;
-  color: #222;
+  font-size: 1.6rem;
+  color: rgba(255, 255, 255, 0.842);
   margin: 1rem;
   font-weight: 700;
 }
@@ -629,6 +608,9 @@ header {
 }
 .card-back-5 {
   background-image: linear-gradient(to bottom right, #696868, #9c9c9c);;
+}
+.card-back-6 {
+  background-image: linear-gradient(to bottom right, #ccbb27, #c2500e);;
 }
 
 @media (max-width: 768px) {
@@ -697,7 +679,7 @@ header {
       left: 1%;
     }
   }
-  .gif-content img {
+  .gif-content video {
     text-align: center;
     height: auto;
     width: 90vw;
