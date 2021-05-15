@@ -1,4 +1,4 @@
-$( window ).ready( function() {
+$( window ).on('load', function() {
 
     // Smooth scroll to section
   $('.smooth-goto').on('click', function () {
@@ -6,7 +6,6 @@ $( window ).ready( function() {
         scrollTop: $(this.hash).offset().top + 50
     }, 1700);
   });
-
 
   // Green To Clean Popup 
 
@@ -28,7 +27,6 @@ $( window ).ready( function() {
     $(".popup-overlay, .popup-content").removeClass("active");
   });
 
-
   // About Popup
 
   $(".popup-btn-about").on("click", function() {
@@ -38,51 +36,6 @@ $( window ).ready( function() {
   $(".close-btn-about").on("click", function() {
     $(".popup-about-content, .popup-about-overlay").removeClass("active");
   });
-
-  // Projects Gif Popup
-
-  /* hides cards if gif is active to not show animation bug
-    if ( $('card-btn').data('clicked', true) ) {
-      $('.card').hide()
-    }
-  */  
-  $('.gif-hover1, .gif-btn1').click(function() {
-    $('#gif1').toggle();
-     if ( $(window).width() > 800 ) {
-      $('.card, .work, .love-it').toggle('opacity')
-     }
-  });
-
-  $('.gif-hover2, .gif-btn2').click(function() {
-    $('#gif2').toggle();
-    if ( $(window).width() > 800 ) {
-      $('.card, .work, .love-it').toggle('opacity')
-     }  });
-  $('.gif-hover3, .gif-btn3').click(function() {
-    $('#gif3').toggle();
-    if ( $(window).width() > 800 ) {
-      $('.card, .work, .love-it').toggle('opacity')
-     }  });
-
-  $('.gif-hover4, .gif-btn4').click(function() {
-    $('#gif4').toggle();
-    if ( $(window).width() > 800 ) {
-      $('.card, .work, .love-it').toggle('opacity')
-     }
-  });
-
-  $('.gif-hover5, .gif-btn5').click(function() {
-    $('#gif5').toggle();
-    if ( $(window).width() < 800 ) {
-      $('.card, .work, .love-it').toggle('opacity')
-    }
-  });
-  
-  $('.gif-hover6, .gif-btn6').click(function() {
-    $('#gif6').toggle();
-    if ( $(window).width() < 800 ) {
-      $('.card, .work, .love-it').toggle('opacity')
-  }});
 
         // FADE IN / FADE OUT SCROLLING ANIMATIONS 
   $(function() {
@@ -171,5 +124,4 @@ $( window ).ready( function() {
       }
   });
   // END FADE SCROLLING ANIMATIONS
-
 })
