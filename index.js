@@ -1,11 +1,23 @@
-$( window ).on('load', function() {
+$(window).on('load', function() {
 
-    // Smooth scroll to section
+  // Smooth scroll to section
   $('.smooth-goto').on('click', function () {
     $('html, body').animate({
         scrollTop: $(this.hash).offset().top + 50
     }, 1700);
   });
+
+// Navbar Animations 
+$(window).scroll(function () {
+
+  const navbar = $('.navbar');
+
+  if (window.pageYOffset > 100) {
+    navbar.style.background = '#007bff';
+  } else {
+    navbar.style.background = 'transparent';
+  }
+})
 
   // Green To Clean Popup 
 
