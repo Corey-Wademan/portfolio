@@ -7,17 +7,22 @@ $(window).on('load', function() {
     }, 1700);
   });
 
-// Navbar Animations 
-$(window).scroll(function () {
-
-  const navbar = $('.navbar');
-
-  if (window.pageYOffset > 100) {
-    navbar.style.background = '#007bff';
-  } else {
-    navbar.style.background = 'transparent';
-  }
-})
+  // Navbar Animations 
+  $(window).scroll(function () {
+    if ($(window).scrollTop() >= 500) {
+      $('.navbar').css({
+          'background': 'rgb(76, 104, 145)',
+          'border-bottom': '5px solid black',
+          'padding': '5px 0',
+      })
+    } else {
+      $('.navbar').css({
+        'background': 'transparent',
+        'padding': '0px',
+        'border-bottom': 'none',
+      })
+    }
+  });
 
   // Green To Clean Popup 
 
@@ -49,7 +54,7 @@ $(window).scroll(function () {
     $(".popup-about-content, .popup-about-overlay").removeClass("active");
   });
 
-        // FADE IN / FADE OUT SCROLLING ANIMATIONS 
+  // FADE IN / FADE OUT SCROLLING ANIMATIONS 
   $(function() {
   
     var html = $('html');
@@ -133,7 +138,8 @@ $(window).scroll(function () {
           d = 0;
         }
         el.css("transition-delay", d);
-      }
-  });
+    }
   // END FADE SCROLLING ANIMATIONS
+  });
+  
 })
