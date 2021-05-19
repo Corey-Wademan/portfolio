@@ -11,7 +11,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
-        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Jura:wght@700&family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Jura:wght@700&family=Space+Grotesk:wght@300;500;700&family=Montserrat&display=swap" rel="stylesheet">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
         <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
         <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -27,29 +27,45 @@
     </head>
     <body>
 
-        <header>
-            <div class="navbar">
+        <header class="navbar">
+                <h1 id="name">Corey Wademan</h1>
                     <ul>
-                        <a href='#projects' class='btn btn-animated smooth-goto'>Projects</a>
-                        <a href='#work' class='btn btn-animated smooth-goto'>Work</a>
-                        <a class="btn btn-animated" target="blank" href="https://docs.google.com/document/d/e/2PACX-1vSAo4nGU9RJSgwRlo12V_gkNQ3TqgnnJDXU8TNYWXSWLk42G5AKUNEn5Xr7j8DFx9808c5FEPF6bbHT/pub">Resume</a>
-                        <a class="btn  btn-animated popup-btn-about">About Me</a>
-                        <a href="https://github.com/Corey-Wademan" target="blank" class="btn btn-animated" >Github</a>
-                        <a href="https://codepen.io/CdubDev" target="blank" class="btn btn-animated">CodePen</a>
-                        <a href="https://www.linkedin.com/in/corey-wademan-3b7512177/" target="blank" class="btn btn-animated smooth-goto">LinkedIn</a>
+                        <a href='#work' class='btn smooth-goto'>Work</a>
+                        <a href='#projects' class='btn smooth-goto'>Projects</a>
+                        <a class="btn" target="blank" href="https://docs.google.com/document/d/e/2PACX-1vSAo4nGU9RJSgwRlo12V_gkNQ3TqgnnJDXU8TNYWXSWLk42G5AKUNEn5Xr7j8DFx9808c5FEPF6bbHT/pub">Resume</a>
+                        <a class="btn popup-btn-about">About Me</a>
+                        <div class="dropdown">
+                            <button class="dropbtn">
+                                Social<span class="iconify dropbtn-arrow" data-icon="dashicons:arrow-up-alt2" data-inline="false"></span>
+                            </button>
+                            <div class="dropdown-content">
+                                <a href="https://github.com/Corey-Wademan" target="blank" class="btn" >Github</a>
+                                <a href="https://codepen.io/CdubDev" target="blank" class="btn">CodePen</a>
+                                <a href="https://www.linkedin.com/in/corey-wademan-3b7512177/" target="blank" class="btn smooth-goto">LinkedIn</a>
+                            </div>
+                          </div>
                     </ul>
-            </div>
         </header>
-                                                <!--Intro Section-->
+
         <main>
+            <section class="header">
+                <div class="typing-animation">
+                    <h1>I'm Corey and I'm motivated to
+                        <span
+                        class="txt-rotate"
+                        data-period="1000"
+                        data-rotate='[ "use technology to help others.", "design and develop valuable applications."]'></span>
+                    </h1>
+                </div>
+            </section>
             <section class="skills">
-                <h2 data-animate-in="left" class='heading-secondary'>Front End Focused<br>With Design <span class="iconify heading-secondary-icon"  data-icon="codicon:arrow-right" data-inline="false"></span> Deployment Experience</h2>
+                <h2 class='heading-secondary'>Front End Focused<br>With Design <span class="iconify heading-secondary-icon"  data-icon="codicon:arrow-right" data-inline="false"></span> Deployment Experience</h2>
                 <div class="skills-row">
                     <div class='column-1-2'>
-                        <p data-animate-in="left" class="excerpt"><strong>I'm Corey,</strong> and I love to <strong>design</strong> and <strong>develop</strong> the <strong>Front End experience</strong> for applications and websites. I enjoy creating and building ideas into <strong>sleek, valuable</strong>  final products. In addition, I have experience using <strong>Node.js, Express, and SQL</strong> on the Backend / Database.</p>
+                        <p class="excerpt"><strong>I'm Corey,</strong> and I love to <strong>design</strong> and <strong>develop</strong> the <strong>Front End experience</strong> for applications and websites. I enjoy creating and building ideas into <strong>sleek, valuable</strong>  final products. In addition, I have experience using <strong>Node.js, Express, and SQL</strong> on the Backend / Database.</p>
                     </div>
                     <div class='column-1-2'>
-                        <div data-animate-in="fadeIn" class="icon-stack">
+                        <div class="icon-stack">
                             <img data-icon="logos-javascript" data-inline="false" alt="js" class="iconify icon-photo icon-photo-js">
                             <img class="iconify icon-photo icon-photo-react" alt='react' data-icon="cib-react" data-inline="false">
                             <img class="iconify icon-photo" data-icon="logos:nodejs-icon" data-inline="false"></img>                        
@@ -64,7 +80,7 @@
             <div class="bottom-section">
                 <section class='features'>
                     <div class="feature-row">
-                        <div data-animate-in="left" class="features-card">
+                        <div class="features-card">
                             <span class="iconify features-icon" data-icon="mdi:iframe-outline" data-inline="false"></span>
                             <h3>Front End</h3>
                             <ul>
@@ -75,7 +91,7 @@
                                 <li>jQuery</li>
                             </ul>
                         </div>
-                        <div data-animate-in="up" class="features-card">
+                        <div class="features-card">
                             <span class="iconify features-icon" data-icon="clarity:rack-server-line" data-inline="false"></span>                       
                             <h3>Server</h3>
                             <ul>
@@ -83,7 +99,7 @@
                                <li>Express</li> 
                             </ul>
                         </div>
-                        <div data-animate-in="up" class="features-card">
+                        <div class="features-card">
                             <span class="iconify features-icon" data-icon="feather:database" data-inline="false"></span>                       
                             <h3>Database</h3>
                             <ul>
@@ -91,7 +107,7 @@
                                <li>SQLite</li> 
                             </ul>
                         </div>
-                        <div data-animate-in="right" class="features-card">
+                        <div class="features-card">
                             <span class="iconify features-icon" data-icon="bi:cloud-upload" data-inline="false"></span>
                             <h3>Deployment</h3>
                             <ul>
@@ -116,7 +132,7 @@
                             <div class="card-side card-side-front card-front-6">
                                 <div class="card-image card-image-6">
                                     <h4 class="card-heading">
-                                        <span class=" card-heading-6">Weather Forecasting App</span>
+                                        <span class=" card-heading-6">Weather Forecaster</span>
                                     </h4>
                                 </div>
                                     <img>
@@ -134,7 +150,9 @@
                             <div class="card-side card-side-back card-back-6">
                                 <div class="card-cta">
                                     <p class="card-text-box">
-                                        Web Application to fetch current and forecasted weather for a given search query. Search results are converted into lat/long points then passed to  Open Weather API where weather data is retrieved. Node/Express Proxy server handles requests and responses. Frontend UI displayed with React.
+                                        Web App to fetch current and forecasted weather. Search results are converted into lat/long points then passed to Open Weather API for data results. Node/Express Proxy server handles requests and responses. Frontend UI displayed with React.
+                                        <br><br>
+                                        **App is served on Heroku's free servers, loading times may vary**
                                     </p>
                                    <div class="card-btn-box">
                                         <a 
@@ -158,7 +176,7 @@
                             <div class="card-side card-side-front card-front-3">
                                 <div class="card-image card-image-3">
                                     <h4 class="card-heading">
-                                        <span class=" card-heading-3">Yelp Clone Restaurant Finder </span>
+                                        <span class=" card-heading-3">Hangry</span>
                                     </h4>
                                 </div>
                                     <img>
@@ -174,7 +192,7 @@
                             <div class="card-side card-side-back card-back-3">
                                 <div class="card-cta">
                                     <p class="card-text-box">
-                                        Displays a list of restaurants defined by different search querys and filter keywords accessing the Yelp API using React Class components
+                                        Displays restaurants based on name and location and filtered by Most Popular, Highest Rated, Most Reviewed.
                                     </p>
                                     <div class="card-btn-box">
                                         <a 
@@ -213,7 +231,7 @@
                             <div class="card-side card-side-back card-back-2">
                                 <div class="card-cta">
                                     <p class="card-text-box">
-                                        Plots live wildfires across the globe retrieved by NASA satellite data using React Functional Components & React Hooks 
+                                        Plots live wildfires across the globe on Google Maps API, that's retrieved by NASA satellite data using React Functional Components & React Hooks 
                                     </p>
                                     <div class="card-btn-box">
                                         <a 
@@ -280,7 +298,7 @@
                             <div class="card-side card-side-front card-front-4">
                                 <div class="card-image card-image-4">
                                     <h4 class="card-heading">
-                                        <span class="card-heading-4">E-Commerce Store</span>
+                                        <span class="card-heading-4">E-Commerce</span>
                                     </h4>
                                 </div>
                                     <img>
@@ -359,7 +377,7 @@
 
                 <section id='work' class="work">
                     <h2 class="bottom-section-headings">Work</h2>
-                    <div data-animate-in="fadeIn" class="work-content">
+                    <div class="work-content">
                         <div class="work-card">
                             <h3>Green To Clean Powerwashing</h3>
                             <img class="work-card-image" src="./photos/green-to-clean-pic.JPG">
@@ -373,8 +391,8 @@
                     </div>
                 </section>
                 <div class="love-it">
-                    <h1 data-animate-in="left">Love it?</h1>
-                    <a style="transition: .4s;" data-animate-in="right" href="mailto:cwademan6@gmail.com">Lets Talk</a>
+                    <h1>Love it?</h1>
+                    <a style="transition: .4s;" href="mailto:cwademan6@gmail.com">Lets Talk</a>
                 </div>
             </div>
         <footer>
@@ -463,5 +481,6 @@
         </div>
         
         <script src="/index.js"></script>
+        <script src="/typingAnimation.js"></script>
     </body>
 </html>
