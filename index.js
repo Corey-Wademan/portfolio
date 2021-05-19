@@ -50,6 +50,19 @@ $(window).on('load', function() {
     $('.navbar').css('display','flex')
   });
 
+  // J Michael Popup
+  $(".popup-btn-jmichael").on("click", function() {
+    $(".popup-jmichael-overlay, .popup-jmichael-content").addClass("active");
+    $('.navbar').css('display','none')
+  });
+
+  $(".close-btn").on("click", function() {
+    $(".popup-jmichael-overlay, .popup-jmichael-content").removeClass("active");
+    $('.navbar').css('display','flex')
+  });
+
+  
+
   // About Popup
 
   $(".popup-btn-about").on("click", function() {
