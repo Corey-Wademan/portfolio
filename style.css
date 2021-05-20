@@ -331,11 +331,10 @@ body::-webkit-scrollbar-thumb {
 .features {
   background-image: url(/photos/tahiti-underwater.jpg);
   background-position: center;
-  height: 100vh;
+  height: fit-content;
   background-attachment: fixed;
   background-repeat: no-repeat;
   background-size: cover;
-  overflow: hidden;
   width: 100%;
 }
 @media (max-width: 1024px) {
@@ -363,7 +362,7 @@ body::-webkit-scrollbar-thumb {
   box-shadow: 0 1.5rem 4rem rgba(0, 0, 0, 0.15);
   transition: transform .3s;
   width: calc((60% - 3 * 5rem) / 3);
-  height: 40%
+  height: 240px;
 }
 .features-card:hover {
   transform: translateY(-2.5rem) scale(1.03) !important;
@@ -389,9 +388,10 @@ body::-webkit-scrollbar-thumb {
       flex-direction: column;
     }
     .features-card {
-      height: 15%;
-      width: 40%;
-      font-size: 1.2rem;
+      height: fit-content;
+      width: 70%;
+      font-size: 1.5rem;
+      margin: 5px 0;
     }
     .features-card h3 {
     margin: 0;
@@ -693,7 +693,7 @@ body::-webkit-scrollbar-thumb {
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 70%;
+  max-width: 85%;
   background-color: rgba(255, 255, 255, 0.8);
   font-size: 1.5rem;
   padding: 2.5rem;
@@ -738,7 +738,7 @@ body::-webkit-scrollbar-thumb {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  margin: 10px 0;
+  margin: 5rem 0;
 }
   .love-it h1 {
     font-size: 6vw;
