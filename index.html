@@ -10,9 +10,11 @@
         <link rel='icon' href='https://api.iconify.design/ant-design:code-twotone.svg'>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="style-v2.css">
+        <link rel="stylesheet" href="navbar.css">
         <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Jura:wght@700&family=Space+Grotesk:wght@300;500;700&family=Montserrat&display=swap" rel="stylesheet">
-        <script async src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
         <!-- Global site tag (gtag.js) - Google Analytics -->
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-0Q1NBBYMRY"></script>
         <script>
@@ -22,100 +24,132 @@
         gtag('config', 'G-0Q1NBBYMRY');
         </script>
 
-        <title>Corey Wademan's Web Developer Portfolio</title>
+        <title>Corey Wademan's Portfolio</title>
     </head>
     <body>
+        <nav id="menu">
+            <h1 id="name">Corey Wademan</h1>
+            <div class="menu-item highlight">
+                <div class="menu-text">
+                    <a href='#work' class='btn smooth-goto'>Work</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-text">
+                    <a href='#projects' class='btn smooth-goto'>Projects</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-text">
+                    <a class="btn" target="blank" href="https://docs.google.com/document/d/e/2PACX-1vQxKiRFlymUezPpES6XaXJo36hEHQbMTlNIR4hNZM_Csu7pxTPxZpQDeo6B2o2a-pTq_WuDL64ySJyF/pub">Resume</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-text">
+                    <a class="btn popup-btn-about">About Me</a>
+                </div>
+            </div>
+            <div class="menu-item">
+                <div class="menu-text triangle">
+                    <a href="#">Social</a>
+                </div>
+                <div class="sub-menu">
+                    <div class="icon-box">
+                        <div class="icon">
+                            <span class="iconify" data-icon="logos:github-icon" data-inline="false"></span>
+                        </div>
+                        <div class="text">
+                            <a class="title" href="https://github.com/Corey-Wademan" target="blank" >
+                                Github 
+                                <span class="iconify" data-icon="bi:arrow-right" data-inline="false" style="padding: 0 5px;">
+                                </span>                                            </a>
+                        </div>
+                    </div>
+                    <div class="icon-box">
+                        <div class="icon">
+                            <span class="iconify" data-icon="logos:linkedin-icon" data-inline="false"></span>
+                        </div>
+                        <div class="text">
+                            <a class="title" href="https://www.linkedin.com/in/corey-wademan-3b7512177/" target="blank">
+                                LinkedIn
+                                <span class="iconify" data-icon="bi:arrow-right" data-inline="false" style="padding: 0 5px;">
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="sub-menu-holder"></div>
+                </div>
+            </div>
+            <div id="sub-menu-container">
+                <div id="sub-menu-holder">
+                    <div id="sub-menu-bottom">
 
-        <header class="navbar">
-                <h1 id="name">Corey Wademan</h1>
-                    <ul>
-                        <a href='#work' class='btn smooth-goto'>Work</a>
-                        <a href='#projects' class='btn smooth-goto'>Projects</a>
-                        <a class="btn" target="blank" href="https://docs.google.com/document/d/e/2PACX-1vSAo4nGU9RJSgwRlo12V_gkNQ3TqgnnJDXU8TNYWXSWLk42G5AKUNEn5Xr7j8DFx9808c5FEPF6bbHT/pub">Resume</a>
-                        <a class="btn popup-btn-about">About Me</a>
-                        <div class="dropdown">
-                            <button class="dropbtn">
-                                <span class="iconify dropbtn-arrow" data-icon="dashicons:arrow-up-alt2" data-inline="false"></span>
-                            </button>
-                            <div class="dropdown-content">
-                                <a href="https://github.com/Corey-Wademan" target="blank" class="btn" >Github</a>
-                                <a href="https://codepen.io/CdubDev" target="blank" class="btn">CodePen</a>
-                                <a href="https://www.linkedin.com/in/corey-wademan-3b7512177/" target="blank" class="btn smooth-goto">LinkedIn</a>
-                            </div>
-                          </div>
-                    </ul>
-        </header>
+                    </div>
+                </div>
+            </div>
+        </nav>
 
         <main>
             <section class="header">
                 <div class="typing-animation">
-                    <h1>I'm Corey and I'm motivated to
+                    <h1>I'm 
                         <span
                         class="txt-rotate"
                         data-period="1000"
-                        data-rotate='[ "use technology to help others.", "design and develop valuable applications."]'></span>
+                        data-rotate='["Corey Wademan and I&#39m a Full-Stack Software Developer.", "motivated to build applications and websites that are unique and creative.", "passionate about technology and riding the wave of the next innovation."]'></span>
                     </h1>
                 </div>
             </section>
             <section class="skills">
-                <h2 class='heading-secondary'>Front End Focused<br>With Design <span class="iconify heading-secondary-icon"  data-icon="codicon:arrow-right" data-inline="false"></span> Deployment Experience</h2>
+                <h2 class='heading-secondary'>Full-Stack JavaScript Developer</h2>
                 <div class="skills-row">
                         <div class="icon-stack">
-                            <img data-icon="logos-javascript" data-inline="false" alt="js" class="iconify icon-photo icon-photo-js">
-                            <img class="iconify icon-photo icon-photo-react" alt='react' data-icon="cib-react" data-inline="false">
-                            <img class="iconify icon-photo" data-icon="logos:nodejs-icon" data-inline="false"></img>                        
-                            <img data-icon="icomoon-free:html-five" data-inline="false" alt="html" class="iconify icon-photo icon-photo-html">
-                            <img data-icon="icomoon-free:css3" data-inline="false" alt="css" class="iconify icon-photo icon-photo-css">
-                            <img data-icon="bi-bootstrap" data-inline="false" alt="bootstrap" class="iconify icon-photo icon-photo-boot">
-                            <img class="iconify icon-photo icon-photo-js" data-icon="bx:bxl-jquery" style="color: #0868ac" data-inline="false"></img>
+                            <figure>
+                                <img data-icon="logos-javascript" data-inline="false" alt="js" class="iconify icon-photo icon-photo-js">
+                                <figcaption>JavaScript</figcaption>
+                            </figure>
+                            <figure>
+                                <img class="iconify icon-photo icon-photo-react" alt='react' data-icon="cib-react" data-inline="false">
+                                <figcaption>React.js</figcaption>
+                            </figure>
+                            <figure>
+                                <img class="iconify icon-photo" data-icon="bx:bxl-redux" data-inline="false" style="color: #764abc;"></img>
+                                <figcaption>Redux</figcaption>
+                            </figure>
+                            <figure>
+                                <img class="iconify icon-photo" data-icon="logos:nodejs-icon" data-inline="false"></img>
+                                <figcaption>Node.js</figcaption>
+                            </figure>
+                            <figure>
+                                <img class="iconify icon-photo" data-icon="simple-icons:mongodb" data-inline="false" style="color: rgb(16, 170, 80);"></img>               
+                                <figcaption>MongoDB</figcaption>  
+                            </figure>
+                            <figure>
+                                <img class="iconify icon-photo" data-icon="carbon:sql" data-inline="false" style="color: #2962ff;"></img>
+                                <figcaption>SQL/SQLite</figcaption>
+                            </figure>
+                            <figure>
+                                <img class="iconify icon-photo icon-photo-js" data-icon="bx:bxl-jquery" style="color: #0868ac" data-inline="false"></img>
+                                <figcaption>jQuery</figcaption>
+                            </figure>  
+                            <figure>
+                                <img data-icon="icomoon-free:html-five" data-inline="false" alt="html" class="iconify icon-photo icon-photo-html">
+                                <figcaption>HTML5</figcaption>
+                            </figure>
+                            <figure>
+                                <img data-icon="icomoon-free:css3" data-inline="false" alt="css" class="iconify icon-photo icon-photo-css">
+                                <figcaption>CSS</figcaption>
+                            </figure>  
+                            <figure>
+                                <img data-icon="bi-bootstrap" data-inline="false" alt="bootstrap" class="iconify icon-photo icon-photo-boot">
+                                <figcaption>Bootstrap</figcaption>
+                            </figure>  
                         </div>
                 </div>
             </section>
         
             <div class="bottom-section">
-                <section class='features'>
-                    <div class="feature-row">
-                        <div class="features-card">
-                            <span class="iconify features-icon" data-icon="mdi:iframe-outline" data-inline="false"></span>
-                            <h3>Front End</h3>
-                            <ul>
-                                <li>HTML5</li>
-                                <li>CSS3 | SASS</li>
-                                <li>JavaScript (ES6)</li>
-                                <li>React | Redux</li>
-                                <li>jQuery</li>
-                            </ul>
-                        </div>
-                        <div class="features-card">
-                            <span class="iconify features-icon" data-icon="clarity:rack-server-line" data-inline="false"></span>                       
-                            <h3>Server</h3>
-                            <ul>
-                               <li>Node.js</li>
-                               <li>Express</li> 
-                            </ul>
-                        </div>
-                        <div class="features-card">
-                            <span class="iconify features-icon" data-icon="feather:database" data-inline="false"></span>                       
-                            <h3>Database</h3>
-                            <ul>
-                               <li>SQL</li>
-                               <li>SQLite</li> 
-                            </ul>
-                        </div>
-                        <div class="features-card">
-                            <span class="iconify features-icon" data-icon="bi:cloud-upload" data-inline="false"></span>
-                            <h3>Deployment</h3>
-                            <ul>
-                                <li>AWS S3</li>
-                                <li>Netlify</li>
-                                <li>Heroku</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
-
                                      <!--Project Cards-->
-
                 <section id='projects' class="projects">
                     <h2 class="bottom-section-headings">Projects</h2>
                     <!--1st Row-->
@@ -455,7 +489,7 @@
                     <a class="popup-checkpoint-btn" target="_blank" href='http://jmichaelpowerwashing.com/'>Visit Site</a>
                 </div>    
             </div>
-        </div>
+        </div> 
 
         <div class="popup-about-overlay">
             <div class="popup-about-content">
@@ -481,17 +515,17 @@
                     <div class="about-column-right">
                         <h1>Biography</h1>
                         <p>
-                            I have two years experience in Front End Web Development alongside design expertise working as the sole designer and developer for an Alarm Systems company.
+                            Hey, Welcome to my Portfolio 😃
                             <br><br>
-                            I first became interested in coding 6 years ago when I realized there wasn't any single-program or application to find local bands and live music at establishments nearby, which is now the very popular "Events" module on Facebook. 
+                            I am a Full-Stack Software Developer that works within the MERN stack. I've developed a handful of web applications and collaborated with buisness owners to design websites within different industries served on Amazon Cloudfront & S3. 
                             <br><br>
-                            Fast-forward, I've developed a few personal apps and taken a company and expanded their non-existent online presence to occupy space across multiple social media platforms while designing, developing, and deploying a fully responsive mobile-first website with JavaScript, jQuery, HTML/CSS. With a prospering online presence, they have increased their digital customer engagement by over 300%.
+                            My interests lay in enigneering unique and creative solutions that solve real-world problems. I have a strong passion for environmental issues and created a web app to help users view in real-time wildfires across the globe. (It's crazy how many fires are occuring at any moment across the globe.) 
                             <br><br>
-                            My passion lies in brainstorming and creating sleek front-end interfaces with modern, dynamic user experiences using JavaScript and React. I also have a passionate, keen eye for design which I like to experiment with in my personal projects.
+                            I've also developed a full stack web app for a user to view a large amount of current and forecasted weather data for a given location. Currently, I'm working on a production social media web app for rock climbers with a surf forecasting app trailing behind. 
                             <br><br>
-                            Since I've said <i>Hello</i> to the <i>World</i>, I've been hooked ever since, striving to grow and learn to become the best developer I can be. The skills in my resume and the features & projects listed here will continue to evolve and expand, so check back soon to see changes.
+                            My enthusiam and compassion is unmatched, waking up everyday stoked and eager with ideas to create and implement.
+                            My hobbies outside of coding include surfing, rock climbing, guitar, hiking, yoga, going out, and reading/podcasts.
                             <br><br>
-                            My hobbies outside of coding include surfing, rock climbing, guitar, hiking, yoga, and reading.
                         </p>
                     </div>
                     
@@ -501,7 +535,6 @@
 
         <script src="/index.js"></script>
         <script src="/typingAnimation.js"></script>
-        <script  src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
-
+        <script src="https://code.iconify.design/1/1.0.7/iconify.min.js"></script>
     </body>
 </html>
